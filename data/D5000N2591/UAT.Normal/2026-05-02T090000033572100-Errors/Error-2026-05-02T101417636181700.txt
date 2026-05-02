@@ -1,0 +1,66 @@
+Error at: https://scuda.uat.oci.krungsri.tech/ic/builder/rt/SCUDA/live/webApps/scuda/vp/shell/main/main-individual-create?currentStep=2
+
+com.microsoft.playwright.TimeoutError
+
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-668176433794721228\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-668176433794721228\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-668176433794721228\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("[\\:aria-label*='getCurrentStep()?.title'][aria-label*='Step 3 of 8 Personal']") to be visible
+
+
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-668176433794721228\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-668176433794721228\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-668176433794721228\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("[\\:aria-label*='getCurrentStep()?.title'][aria-label*='Step 3 of 8 Personal']") to be visible
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:985)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:625)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5418)
+	at scuda.perf.uitest.screens.ProcessStepCreate.waitToStart(ProcessStepCreate.java:42)
+	at scuda.perf.uitest.screens.ProcessStepCreate.lambda$measureContinue$1(ProcessStepCreate.java:74)
+	at scuda.perf.uitest.screens.Screen.measure(Screen.java:96)
+	at scuda.perf.uitest.screens.Screen.measure(Screen.java:89)
+	at scuda.perf.uitest.screens.ProcessStepCreate.measureContinue(ProcessStepCreate.java:71)
+	at scuda.perf.uitest.screens.ProcessStepCreate.measureContinue(ProcessStepCreate.java:80)
+	at scuda.perf.uitest.screens.createindividual.Step2_DuplicateCheck._processToNextStep(Step2_DuplicateCheck.java:36)
+	at scuda.perf.uitest.screens.createindividual.Step2_DuplicateCheck._processToNextStep(Step2_DuplicateCheck.java:8)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.createIndividualProfile(EnterpriseCustomerMaster.java:173)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.runRandomly(EnterpriseCustomerMaster.java:157)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:137)
+	at scuda.perf.uitest.App.threadRun(App.java:213)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:153)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-668176433794721228\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-668176433794721228\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-668176433794721228\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("[\\:aria-label*='getCurrentStep()?.title'][aria-label*='Step 3 of 8 Personal']") to be visible
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 22 more

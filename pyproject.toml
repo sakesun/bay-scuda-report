@@ -1,0 +1,12 @@
+[project]
+name = "bay-scuda-report"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "duckdb>=1.5.2",
+    "marimo>=0.23.4",
+    "pandas>=3.0.2",
+    "sqlglot>=30.6.0",
+]

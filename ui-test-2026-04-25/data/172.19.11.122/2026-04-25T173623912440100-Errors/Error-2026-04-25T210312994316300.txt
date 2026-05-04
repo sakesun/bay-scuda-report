@@ -1,0 +1,96 @@
+Error at: https://scuda.uat.oci.krungsri.tech/ic/builder/rt/SCUDA/live/webApps/scuda/vp/shell/main/main-juristic-list
+
+com.microsoft.playwright.PlaywrightException
+
+Error {
+  message='Error: strict mode violation: locator("oj-table[data*='contactSearchList'] table > tbody > tr > td:first-child") resolved to 2 elements:
+    1) <td id="_oj28_table:-769460019_0" class="oj-table-data-cell oj-form-control-inherit">80039418</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80039418"))
+    2) <td id="_oj28_table:-654906113_0" class="oj-table-data-cell oj-form-control-inherit">80070524</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80070524"))
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("oj-table[data*='contactSearchList'] table > tbody > tr > td:first-child") resolved to 2 elements:
+    1) <td id="_oj28_table:-769460019_0" class="oj-table-data-cell oj-form-control-inherit">80039418</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80039418"))
+    2) <td id="_oj28_table:-654906113_0" class="oj-table-data-cell oj-form-control-inherit">80070524</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80070524"))
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\javascript.js:217:12)
+    at async C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\frames.js:624:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\frames.js:881:24)
+    at async FrameDispatcher.waitForSelector (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\dispatchers\frameDispatcher.js:82:98)
+    at async ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\dispatchers\dispatcher.js:329:22)
+}
+Call log:
+-   - waiting for locator("oj-table[data*='contactSearchList'] table > tbody > tr > td:first-child") to be visible
+
+
+com.microsoft.playwright.PlaywrightException: Error {
+  message='Error: strict mode violation: locator("oj-table[data*='contactSearchList'] table > tbody > tr > td:first-child") resolved to 2 elements:
+    1) <td id="_oj28_table:-769460019_0" class="oj-table-data-cell oj-form-control-inherit">80039418</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80039418"))
+    2) <td id="_oj28_table:-654906113_0" class="oj-table-data-cell oj-form-control-inherit">80070524</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80070524"))
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("oj-table[data*='contactSearchList'] table > tbody > tr > td:first-child") resolved to 2 elements:
+    1) <td id="_oj28_table:-769460019_0" class="oj-table-data-cell oj-form-control-inherit">80039418</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80039418"))
+    2) <td id="_oj28_table:-654906113_0" class="oj-table-data-cell oj-form-control-inherit">80070524</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80070524"))
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\javascript.js:217:12)
+    at async C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\frames.js:624:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\frames.js:881:24)
+    at async FrameDispatcher.waitForSelector (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\dispatchers\frameDispatcher.js:82:98)
+    at async ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\dispatchers\dispatcher.js:329:22)
+}
+Call log:
+-   - waiting for locator("oj-table[data*='contactSearchList'] table > tbody > tr > td:first-child") to be visible
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:985)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:625)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5418)
+	at scuda.perf.uitest.screens.SearchScreen.measureSearch(SearchScreen.java:77)
+	at scuda.perf.uitest.screens.SearchScreen.measureSearch(SearchScreen.java:62)
+	at scuda.perf.uitest.screens.SearchScreen.measureAllSearches(SearchScreen.java:102)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.createJuristicProfile(EnterpriseCustomerMaster.java:191)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.runRandomly(EnterpriseCustomerMaster.java:158)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:137)
+	at scuda.perf.uitest.App.threadRun(App.java:216)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:155)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: strict mode violation: locator("oj-table[data*='contactSearchList'] table > tbody > tr > td:first-child") resolved to 2 elements:
+    1) <td id="_oj28_table:-769460019_0" class="oj-table-data-cell oj-form-control-inherit">80039418</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80039418"))
+    2) <td id="_oj28_table:-654906113_0" class="oj-table-data-cell oj-form-control-inherit">80070524</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80070524"))
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("oj-table[data*='contactSearchList'] table > tbody > tr > td:first-child") resolved to 2 elements:
+    1) <td id="_oj28_table:-769460019_0" class="oj-table-data-cell oj-form-control-inherit">80039418</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80039418"))
+    2) <td id="_oj28_table:-654906113_0" class="oj-table-data-cell oj-form-control-inherit">80070524</td> aka getByRole(AriaRole.CELL, new Page.GetByRoleOptions().setName("80070524"))
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\javascript.js:217:12)
+    at async C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\frames.js:624:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\frames.js:881:24)
+    at async FrameDispatcher.waitForSelector (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\dispatchers\frameDispatcher.js:82:98)
+    at async ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-2192887600240809198\package\lib\server\dispatchers\dispatcher.js:329:22)
+}
+Call log:
+-   - waiting for locator("oj-table[data*='contactSearchList'] table > tbody > tr > td:first-child") to be visible
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 16 more

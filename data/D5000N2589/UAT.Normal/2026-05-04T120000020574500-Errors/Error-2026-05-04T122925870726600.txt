@@ -1,0 +1,24 @@
+Error at: https://scuda.uat.oci.krungsri.tech/ic/builder/rt/SCUDA/live/webApps/scuda/vp/shell/main/main-juristic-edit
+
+java.lang.RuntimeException
+
+Cannot find element with part '$variables.contact.titleth' in value after tabbing 100 times.
+
+java.lang.RuntimeException: Cannot find element with part '$variables.contact.titleth' in value after tabbing 100 times.
+	at scuda.perf.uitest.screens.OracleJet.tabTo(OracleJet.java:90)
+	at scuda.perf.uitest.screens.OracleJet.put(OracleJet.java:118)
+	at scuda.perf.uitest.screens.OracleJet.put(OracleJet.java:101)
+	at scuda.perf.uitest.screens.updatejuristic.JuristicProfileDetails$EditJuristicProfile._processToNextStep(JuristicProfileDetails.java:60)
+	at scuda.perf.uitest.screens.updatejuristic.JuristicProfileDetails$EditJuristicProfile._processToNextStep(JuristicProfileDetails.java:41)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.updatejuristic.JuristicProfileDetails._processToNextStep(JuristicProfileDetails.java:34)
+	at scuda.perf.uitest.screens.updatejuristic.JuristicProfileDetails._processToNextStep(JuristicProfileDetails.java:9)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.updateJuristicProfile(EnterpriseCustomerMaster.java:269)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.runRandomly(EnterpriseCustomerMaster.java:163)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:140)
+	at scuda.perf.uitest.App.threadRun(App.java:213)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:153)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)

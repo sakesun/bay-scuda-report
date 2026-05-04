@@ -1,0 +1,15 @@
+Error at: https://scuda.uat.oci.krungsri.tech/ic/builder/rt/SCUDA/live/webApps/scuda/vp/shell/main/main-juristic-create?currentStep=1
+
+java.lang.NullPointerException
+
+Cannot invoke "Object.toString()" because the return value of "scuda.perf.uitest.screens.ProcessStep.getResult()" is null
+
+java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "scuda.perf.uitest.screens.ProcessStep.getResult()" is null
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.createJuristicProfile(EnterpriseCustomerMaster.java:202)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.runRandomly(EnterpriseCustomerMaster.java:161)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:140)
+	at scuda.perf.uitest.App.threadRun(App.java:213)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:153)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)

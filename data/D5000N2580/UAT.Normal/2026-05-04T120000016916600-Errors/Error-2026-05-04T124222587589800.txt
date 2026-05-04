@@ -1,0 +1,24 @@
+Error at: https://scuda.uat.oci.krungsri.tech/ic/builder/rt/SCUDA/live/webApps/scuda/vp/shell/main/main-individual-create?currentStep=5
+
+java.lang.RuntimeException
+
+Cannot find element with part '$variables.addressInformationVar.subDistrictCode' in value after tabbing 100 times.
+
+java.lang.RuntimeException: Cannot find element with part '$variables.addressInformationVar.subDistrictCode' in value after tabbing 100 times.
+	at scuda.perf.uitest.screens.OracleJet.tabTo(OracleJet.java:90)
+	at scuda.perf.uitest.screens.OracleJet.put(OracleJet.java:118)
+	at scuda.perf.uitest.screens.OracleJet.put(OracleJet.java:101)
+	at scuda.perf.uitest.screens.createindividual.Step5_Address.lambda$addPrimaryAddress$1(Step5_Address.java:54)
+	at scuda.perf.uitest.screens.OracleJet.persist(OracleJet.java:242)
+	at scuda.perf.uitest.screens.createindividual.Step5_Address.addPrimaryAddress(Step5_Address.java:45)
+	at scuda.perf.uitest.screens.createindividual.Step5_Address._processToNextStep(Step5_Address.java:35)
+	at scuda.perf.uitest.screens.createindividual.Step5_Address._processToNextStep(Step5_Address.java:10)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.createIndividualProfile(EnterpriseCustomerMaster.java:176)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.runRandomly(EnterpriseCustomerMaster.java:160)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:140)
+	at scuda.perf.uitest.App.threadRun(App.java:213)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:153)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)

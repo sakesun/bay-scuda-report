@@ -1,0 +1,94 @@
+com.microsoft.playwright.PlaywrightException
+
+Error {
+  message='Executable doesn't exist at C:\Users\7i120092\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+╔════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.                                       ║
+║ Please run the following command to download new browsers:                                 ║
+║                                                                                            ║
+║     mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install" ║
+║                                                                                            ║
+║ <3 Playwright Team                                                                         ║
+╚════════════════════════════════════════════════════════════════════════════════════════════╝
+  name='Error
+  stack='Error: Executable doesn't exist at C:\Users\7i120092\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+╔════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.                                       ║
+║ Please run the following command to download new browsers:                                 ║
+║                                                                                            ║
+║     mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install" ║
+║                                                                                            ║
+║ <3 Playwright Team                                                                         ║
+╚════════════════════════════════════════════════════════════════════════════════════════════╝
+    at executablePathOrDie (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\registry\index.js:517:15)
+    at Object.executablePathOrDie (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\registry\index.js:787:45)
+    at FrameSession._createVideoRecorder (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\chromium\crPage.js:747:74)
+    at FrameSession._initialize (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\chromium\crPage.js:382:18)
+}
+
+com.microsoft.playwright.PlaywrightException: Error {
+  message='Executable doesn't exist at C:\Users\7i120092\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+╔════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.                                       ║
+║ Please run the following command to download new browsers:                                 ║
+║                                                                                            ║
+║     mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install" ║
+║                                                                                            ║
+║ <3 Playwright Team                                                                         ║
+╚════════════════════════════════════════════════════════════════════════════════════════════╝
+  name='Error
+  stack='Error: Executable doesn't exist at C:\Users\7i120092\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+╔════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.                                       ║
+║ Please run the following command to download new browsers:                                 ║
+║                                                                                            ║
+║     mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install" ║
+║                                                                                            ║
+║ <3 Playwright Team                                                                         ║
+╚════════════════════════════════════════════════════════════════════════════════════════════╝
+    at executablePathOrDie (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\registry\index.js:517:15)
+    at Object.executablePathOrDie (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\registry\index.js:787:45)
+    at FrameSession._createVideoRecorder (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\chromium\crPage.js:747:74)
+    at FrameSession._initialize (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\chromium\crPage.js:382:18)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:114)
+	at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:437)
+	at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:43)
+	at scuda.perf.uitest.App.threadRun(App.java:224)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:155)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Executable doesn't exist at C:\Users\7i120092\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+╔════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.                                       ║
+║ Please run the following command to download new browsers:                                 ║
+║                                                                                            ║
+║     mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install" ║
+║                                                                                            ║
+║ <3 Playwright Team                                                                         ║
+╚════════════════════════════════════════════════════════════════════════════════════════════╝
+  name='Error
+  stack='Error: Executable doesn't exist at C:\Users\7i120092\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+╔════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.                                       ║
+║ Please run the following command to download new browsers:                                 ║
+║                                                                                            ║
+║     mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install" ║
+║                                                                                            ║
+║ <3 Playwright Team                                                                         ║
+╚════════════════════════════════════════════════════════════════════════════════════════════╝
+    at executablePathOrDie (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\registry\index.js:517:15)
+    at Object.executablePathOrDie (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\registry\index.js:787:45)
+    at FrameSession._createVideoRecorder (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\chromium\crPage.js:747:74)
+    at FrameSession._initialize (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13277782740707973615\package\lib\server\chromium\crPage.js:382:18)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 10 more

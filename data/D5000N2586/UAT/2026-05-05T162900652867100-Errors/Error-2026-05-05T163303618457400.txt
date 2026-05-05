@@ -1,0 +1,49 @@
+Error at: https://scuda.uat.oci.krungsri.tech/ic/builder/rt/SCUDA/live/webApps/scuda/vp/shell/main/product-holding-list
+
+org.opentest4j.AssertionFailedError
+
+Locator expected to have count
+Expected: 0
+Received: 1
+
+Call log:
+  - Assert "hasCount" with timeout 5000ms
+  - waiting for locator("div.oj-messagebanner-confirmation div.oj-flex-item span")
+    8 × locator resolved to 1 element
+      - unexpected value "1"
+
+org.opentest4j.AssertionFailedError: Locator expected to have count
+Expected: 0
+Received: 1
+
+Call log:
+  - Assert "hasCount" with timeout 5000ms
+  - waiting for locator("div.oj-messagebanner-confirmation div.oj-flex-item span")
+    8 × locator resolved to 1 element
+      - unexpected value "1"
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:74)
+	at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:47)
+	at com.microsoft.playwright.impl.LocatorAssertionsImpl.hasCount(LocatorAssertionsImpl.java:235)
+	at com.microsoft.playwright.assertions.LocatorAssertions.hasCount(LocatorAssertions.java:1749)
+	at scuda.perf.uitest.screens.OracleJet.waitUntilMessageDisappeared(OracleJet.java:230)
+	at scuda.perf.uitest.screens.ProcessStepUpdate$Primary$Secondary.lambda$measureSave$0(ProcessStepUpdate.java:99)
+	at scuda.perf.uitest.screens.Screen.measure(Screen.java:96)
+	at scuda.perf.uitest.screens.Screen.measure(Screen.java:89)
+	at scuda.perf.uitest.screens.ProcessStepUpdate$Primary$Secondary.measureSave(ProcessStepUpdate.java:97)
+	at scuda.perf.uitest.screens.ProcessStepUpdate$Primary$Secondary.measureSave(ProcessStepUpdate.java:104)
+	at scuda.perf.uitest.screens.updateindividual.ListOfProductHoldingCollection$CreateProductHolding.lambda$_processToNextStep$0(ListOfProductHoldingCollection.java:72)
+	at scuda.perf.uitest.screens.OracleJet.persist(OracleJet.java:239)
+	at scuda.perf.uitest.screens.updateindividual.ListOfProductHoldingCollection$CreateProductHolding._processToNextStep(ListOfProductHoldingCollection.java:67)
+	at scuda.perf.uitest.screens.updateindividual.ListOfProductHoldingCollection$CreateProductHolding._processToNextStep(ListOfProductHoldingCollection.java:47)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.updateindividual.ListOfProductHoldingCollection._processToNextStep(ListOfProductHoldingCollection.java:39)
+	at scuda.perf.uitest.screens.updateindividual.ListOfProductHoldingCollection._processToNextStep(ListOfProductHoldingCollection.java:9)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.updateIndividualProfile(EnterpriseCustomerMaster.java:238)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.runRandomly(EnterpriseCustomerMaster.java:160)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:138)
+	at scuda.perf.uitest.App.threadRun(App.java:229)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:155)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)

@@ -1,0 +1,29 @@
+Error at: https://scuda.uat.oci.krungsri.tech/ic/builder/rt/SCUDA/live/webApps/scuda/vp/shell/main/main-juristic-list
+
+com.microsoft.playwright.TimeoutError
+
+Timeout 30000ms exceeded
+
+com.microsoft.playwright.TimeoutError: Timeout 30000ms exceeded
+	at com.microsoft.playwright.impl.WaitableTimeout.get(WaitableTimeout.java:41)
+	at com.microsoft.playwright.impl.WaitableRace.get(WaitableRace.java:46)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.PageImpl.waitForEventWithTimeout(PageImpl.java:536)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponseImpl(PageImpl.java:1542)
+	at com.microsoft.playwright.impl.PageImpl.lambda$waitForResponse$18(PageImpl.java:1534)
+	at com.microsoft.playwright.impl.WaitForEventLogger.get(WaitForEventLogger.java:49)
+	at com.microsoft.playwright.impl.ChannelOwner.withWaitLogging(ChannelOwner.java:84)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1528)
+	at com.microsoft.playwright.impl.PageImpl.waitForResponse(PageImpl.java:1514)
+	at com.microsoft.playwright.Page.waitForResponse(Page.java:8158)
+	at scuda.perf.uitest.screens.SearchScreen.lambda$measureSearch$1(SearchScreen.java:70)
+	at scuda.perf.uitest.screens.Screen.measure(Screen.java:96)
+	at scuda.perf.uitest.screens.Screen.measure(Screen.java:89)
+	at scuda.perf.uitest.screens.SearchScreen.measureSearch(SearchScreen.java:69)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.updateJuristicProfile(EnterpriseCustomerMaster.java:255)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:138)
+	at scuda.perf.uitest.App.threadRun(App.java:229)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:155)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)

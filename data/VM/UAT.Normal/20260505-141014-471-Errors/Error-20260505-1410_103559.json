@@ -1,0 +1,13 @@
+{
+  "type" : "http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1",
+  "title" : "aborted",
+  "detail" : "faultName: {{http://www.oracle.com/2014/03/ics/fault}aborted} cause: {instance aborted}",
+  "o:errorCode" : "500",
+  "o:errorDetails" : [ {
+    "type" : "UnMappedFault:",
+    "instance" : "NA",
+    "title" : "faultName: {{http://www.oracle.com/2014/03/ics/fault}aborted} cause: {instance aborted}",
+    "o:errorPath" : "<![CDATA[<location xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">mcube</location>\n]]>",
+    "o:errorCode" : "aborted"
+  } ]
+}

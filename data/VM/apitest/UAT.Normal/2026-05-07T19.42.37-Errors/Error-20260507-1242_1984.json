@@ -1,0 +1,13 @@
+{
+  "type" : "http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.5.1",
+  "title" : "net.http.503",
+  "detail" : "faultName: {{http://schemas.oracle.com/bpel/extension}remoteFault} cause: {response from http://atpdatabase-adapter:8080/endpoint/outbound/36bd01db-8d2a-49e0-b154-523750eaad59/request?op=CheckCodeValidity_REQUEST is 503 ==> Service Unavailable}",
+  "o:errorCode" : "500",
+  "o:errorDetails" : [ {
+    "type" : "UnMappedFault:",
+    "instance" : "NA",
+    "title" : "faultName: {{http://schemas.oracle.com/bpel/extension}remoteFault} cause: {response from http://atpdatabase-adapter:8080/endpoint/outbound/36bd01db-8d2a-49e0-b154-523750eaad59/request?op=CheckCodeValidity_REQUEST is 503 ==> Service Unavailable}",
+    "o:errorPath" : "<![CDATA[<location xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">mcube</location>\n]]>",
+    "o:errorCode" : "net.http.503"
+  } ]
+}

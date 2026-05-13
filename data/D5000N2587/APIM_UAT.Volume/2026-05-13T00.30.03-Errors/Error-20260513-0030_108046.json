@@ -1,0 +1,10 @@
+{
+  "error": {
+    "code": "-200",
+    "message": "Cannot contact backend system",
+    "messageTH": "",
+    "serverDateTime": "2026-05-13T01:22:18.097+07:00",
+    "clientTransactionID": "1ac47fda-25d7-4697-b00b-6f7122f3f1bb",
+    "serverTransactionID": "e3d0e7f2-90eb-4451-a115-60950d26558c"
+  }
+}

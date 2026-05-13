@@ -1,0 +1,10 @@
+{
+  "error": {
+    "code": "-300",
+    "message": "Current load of this API and API Key is too high. Server can not process the request right now. Please retry later",
+    "messageTH": "",
+    "serverDateTime": "2026-05-13T01:18:29.821+07:00",
+    "clientTransactionID": "1ac47fda-25d7-4697-b00b-6f7122f3f1bb",
+    "serverTransactionID": "22e2534d-8dc6-416c-97fb-69c8c9cecd3c"
+  }
+}

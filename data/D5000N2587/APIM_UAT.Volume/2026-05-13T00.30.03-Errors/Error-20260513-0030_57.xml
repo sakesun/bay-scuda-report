@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <soapenv:Fault>
+            <faultcode>soapenv:Server</faultcode>
+            <faultstring>Policy Falsified</faultstring>
+            <faultactor>https://sandbox.api.krungsri.net/bay/scuda/individual/search</faultactor>
+            <detail>
+                <l7:policyResult status="Assertion Falsified"
+                    xmlns:l7="http://www.layer7tech.com/ws/policy/fault" xmlns:l7p="http://www.layer7tech.com/ws/policy">
+                    <l7:assertionResult
+                        assertion="l7p:ApiPortalIntegration" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Include" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="Assertion Falsified">
+                        <l7:detailMessage id="7101">Comparison did not match: ${policy.authentication.APIKey.mode} is equal to ignore</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:Regex" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Encapsulated" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Regex" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Regex" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="Assertion Falsified">
+                        <l7:detailMessage id="7101">Comparison did not match: ${policy.security.IPWhiteListing} is equal to ignore</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ResponseXpathAssertion" status="No Error">
+                        <l7:detailMessage id="4708">XPath pattern found an element</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:EvaluateJsonPathExpression" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Include" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="Assertion Falsified">
+                        <l7:detailMessage id="7101">Comparison did not match: ${policy.security.SQLInjection.mode} is equal to ignore</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:SqlAttackProtection" status="No Error">
+                        <l7:detailMessage id="7216">Scanning request URL path.</l7:detailMessage>
+                        <l7:detailMessage id="7211">Scanning request URL query string.</l7:detailMessage>
+                        <l7:detailMessage id="7212">Scanning Request message body as text.</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="Assertion Falsified">
+                        <l7:detailMessage id="7101">Comparison did not match: ${policy.security.codeInjection.mode} is equal to ignore</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="Assertion Falsified">
+                        <l7:detailMessage id="7101">Comparison did not match: ${policy.security.codeInjection.mode} contains excludeXSSCheck</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult
+                        assertion="l7p:CodeInjectionProtectionAssertion" status="No Error">
+                        <l7:detailMessage id="7165">Scanning request URL path.</l7:detailMessage>
+                        <l7:detailMessage id="7156">Scanning request URL query string.</l7:detailMessage>
+                        <l7:detailMessage id="7164">Scanning Request message body as application/json.</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Include" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error">
+                        <l7:detailMessage id="-7">Variable exists but has no value: request.http.header.X-Signature</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="Assertion Falsified">
+                        <l7:detailMessage id="7101">Comparison did not match: ${policy.securityBody.mode} is equal to ignore</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:RequestSizeLimit" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Split" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Regex" status="Assertion Falsified">
+                        <l7:detailMessage id="6306">Failing because expression was not matched ^${contentType.current}(;\s*charset=[^\"'&gt;]+)*$</l7:detailMessage>
+                        <l7:detailMessage id="6306">Failing because expression was not matched ^${contentType.current}(;\s*charset=[^\"'&gt;]+)*$</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:TrueAssertion" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:ForEachLoop" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="Assertion Falsified">
+                        <l7:detailMessage id="7101">Comparison did not match: ${policy.securityBody.attributeDuplicateJson.mode} is equal to ignore</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult
+                        assertion="l7p:EvaluateJsonPathExpression" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="Assertion Falsified">
+                        <l7:detailMessage id="7101">Comparison did not match: ${policy.security.validateRequestDatetime.mode} is equal to ignore</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="Assertion Falsified">
+                        <l7:detailMessage id="7101">Comparison did not match: ${requestTimestamp} is empty</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Include" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Encapsulated" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:HttpRoutingAssertion" status="Error in Assertion Processing">
+                        <l7:detailMessage id="4042">Problem routing to https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile. Error msg: Unable to obtain HTTP response from https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile: Connection has been shut down. Caused by: org.apache.http.impl.conn.ConnectionShutdownException</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:Encapsulated" status="Assertion Falsified">
+                        <l7:detailMessage id="-6">No such variable: socSecurityLevel</l7:detailMessage>
+                        <l7:detailMessage id="-6">No such variable: policy.auditlog.backend.errorCode</l7:detailMessage>
+                        <l7:detailMessage id="-6">No such variable: serverTransactionID</l7:detailMessage>
+                        <l7:detailMessage id="-6">No such variable: serverDate</l7:detailMessage>
+                        <l7:detailMessage id="-6">No such variable: apiKeyRecord</l7:detailMessage>
+                        <l7:detailMessage id="-6">No such variable: httpRouting</l7:detailMessage>
+                        <l7:detailMessage id="-6">No such variable: clientTransactionID</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:All" status="Assertion Falsified"/>
+                </l7:policyResult>
+            </detail>
+        </soapenv:Fault>
+    </soapenv:Body>
+</soapenv:Envelope>

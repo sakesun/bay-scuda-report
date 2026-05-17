@@ -1,0 +1,18 @@
+Error at: https://scuda.uat.oci.krungsri.tech/ic/builder/rt/SCUDA/live/webApps/scuda/vp/shell/main/main-juristic-create?currentStep=7
+
+java.lang.RuntimeException
+
+Failed to create juristic profile: Could not create new contact: Details ->: Error 1: Title ->: Failed to proceed Code ->: I10001 Path ->: 'Postal Code' is required. Error 2: Title ->: ไม่สามารถดำเนินการต่อได้ Code ->: I10001 Path ->: กรุณากรอก 'รหัสไปรษณีย์' ให้ครบถ้วน
+
+java.lang.RuntimeException: Failed to create juristic profile: Could not create new contact: Details ->: Error 1: Title ->: Failed to proceed Code ->: I10001 Path ->: 'Postal Code' is required. Error 2: Title ->: ไม่สามารถดำเนินการต่อได้ Code ->: I10001 Path ->: กรุณากรอก 'รหัสไปรษณีย์' ให้ครบถ้วน
+	at scuda.perf.uitest.screens.createjuristic.Step7_Completion._processToNextStep(Step7_Completion.java:46)
+	at scuda.perf.uitest.screens.createjuristic.Step7_Completion._processToNextStep(Step7_Completion.java:10)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.createJuristicProfile(EnterpriseCustomerMaster.java:195)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.runRandomly(EnterpriseCustomerMaster.java:159)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:138)
+	at scuda.perf.uitest.App.threadRun(App.java:229)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:155)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)

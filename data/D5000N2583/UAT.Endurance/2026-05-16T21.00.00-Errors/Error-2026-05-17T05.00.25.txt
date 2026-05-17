@@ -1,0 +1,87 @@
+Error at: https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/authorize?response_mode=form_post&response_type=id_token&scope=openid&IDCS_CG_ENC_VER=v2&state=rQZEy5xp_yOLePVa6JaJXyr1Bw2iVodW9p2sBXm9n30&nonce=kz-nipKNnq35Z7MJ4l3Dm70JXzDX_0DGuyh09JEPEhI&IDCS_IS_CLOUDGATE=true&X-HOST-IDENTIFIER-NAME=scuda.uat.oci.krungsri.tech&idcs_app_name=E39B841CE11C45CFAB6E951FE1305104_APPID&policyAppName=E39B841CE11C45CFAB6E951FE1305104_APPID&policyAppTenant=idcs-ace9ab7fa6a942efa32eff62dc74e0d5&idcs_app_resource_url=https%3A%2F%2Fscuda.uat.oci.krungsri.tech%3A443%2Fic%2Fbuilder%2Fprotected%3Fappid%3DSCUDA%26appver%3Dlive%26endUri%3DwebApps%2Fscuda%2Fvp%2F&client_id=E39B841CE11C45CFAB6E951FE1305104_APPID&IDCS_CG_ENC=true&enc=98-Vdu5Mn1y_AgAAhQIAABAghQIAAGsCAAAQABlPVtW9hUrYM0FfO0tRPTW-_ipRD4iETgjEN0YFWtdw8qv7oKbb7h39T-0-qPtSKgTtwmrzp0xBwejIUCARG_qphoQNm59NabN8BlnHghtILl6_ffQriai-Nihs6teRsJetT5ZJDucf2cthUeq_fF0327Xkwo4ydtsIGOZT8v9O-Cq0R4cnpn11DK8pP13cUlVgNqpEXBYRgNvuHyDnJZVEgOLrewDaSnv7tRBl5Um9YyXl3eazYkaoFHRt0gjenDy__TJmv3ccbzgmlPJbU5Q4qjyfV7LyXlwJQ1MdxgXHi-SnVlmqD_48-1FxSlxKFw0fdaKdxEkXLHIclDa-t9JWK8BXRuERg4eSM2qcYHwWbanA4XQNzb7TrJ8PwLcOZ61L7oQ3PLsFnN4Q0eutO_nOxMQbH-zK9nfrDtNEPLcL62f4g32ILpCve1PPsOJDaaaO5ARa3h1T-vhN2M_5wTPaqmizqwyhP_NkYOryZ1lEXzTswFuimjAQf8UD0A6fZHqLGCTtCevbSFMGiIyPUPuKLkNRfkhiufn7d6l-2NP-aSSJpylidzliLud07SA6-A2-I6DamEab8qb7xx87qvr2Fj2H9V7yubWEfuefli7lRKPZg7clGGytfDNS3H0YS73zWjFl-V2_t8RVp8SgJnr48kT6u0UoYWUzzfn8AKUpXBhaeKl9-lltfTWFwrLYcM33mjbpQQYbDxRBhsqhAFP_zxDhI2ZtAVo04fiC90kV-qGMruybSsC2o66xW_464BVm4Jb-PfXlrNfackxZuqpU_aVamW0ocg1dJ38aooBnNdKxx6PoF80ajnlOupJu_BtT8fLJb1fjuEulZxH-tg7geSytY6ig3_dTBk9Ih9yEgJF8_IYkMUhmvQXAi-cmXPQLW2DxL69j2eZ3
+
+com.microsoft.playwright.PlaywrightException
+
+Error {
+  message='Execution context was destroyed, most likely because of a navigation
+  name='Error
+  stack='Error:Execution context was destroyed, most likely because of a navigation
+Error
+    at captureRawStack (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\utils\isomorphic\stackTrace.js:32:17)
+    at LongStandingScope._race (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\utils\isomorphic\manualPromise.js:87:58)
+    at LongStandingScope.race (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\utils\isomorphic\manualPromise.js:80:17)
+    at FrameExecutionContext._raceAgainstContextDestroyed (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\javascript.js:58:40)
+    at FrameExecutionContext.evaluateWithArguments (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\javascript.js:68:17)
+    at async Object.evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\javascript.js:217:12)
+    at async Frame.evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\frames.js:593:19)
+    at async FrameDispatcher.evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\dispatchers\frameDispatcher.js:76:68)
+    at async ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\dispatchers\dispatcher.js:329:22)
+}
+
+com.microsoft.playwright.PlaywrightException: Error {
+  message='Execution context was destroyed, most likely because of a navigation
+  name='Error
+  stack='Error:Execution context was destroyed, most likely because of a navigation
+Error
+    at captureRawStack (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\utils\isomorphic\stackTrace.js:32:17)
+    at LongStandingScope._race (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\utils\isomorphic\manualPromise.js:87:58)
+    at LongStandingScope.race (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\utils\isomorphic\manualPromise.js:80:17)
+    at FrameExecutionContext._raceAgainstContextDestroyed (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\javascript.js:58:40)
+    at FrameExecutionContext.evaluateWithArguments (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\javascript.js:68:17)
+    at async Object.evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\javascript.js:217:12)
+    at async Frame.evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\frames.js:593:19)
+    at async FrameDispatcher.evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\dispatchers\frameDispatcher.js:76:68)
+    at async ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\dispatchers\dispatcher.js:329:22)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.evaluate(FrameImpl.java:277)
+	at com.microsoft.playwright.impl.PageImpl.evaluate(PageImpl.java:730)
+	at com.microsoft.playwright.Page.evaluate(Page.java:4434)
+	at scuda.perf.uitest.screens.OracleJet.getOracjetJetvalue(OracleJet.java:33)
+	at scuda.perf.uitest.screens.OracleJet.tabTo(OracleJet.java:79)
+	at scuda.perf.uitest.screens.OracleJet.put(OracleJet.java:115)
+	at scuda.perf.uitest.screens.OracleJet.put(OracleJet.java:98)
+	at scuda.perf.uitest.screens.updateindividual.ListOfAddress$EditAddress.lambda$_processToNextStep$0(ListOfAddress.java:74)
+	at scuda.perf.uitest.screens.OracleJet.persist(OracleJet.java:239)
+	at scuda.perf.uitest.screens.updateindividual.ListOfAddress$EditAddress._processToNextStep(ListOfAddress.java:71)
+	at scuda.perf.uitest.screens.updateindividual.ListOfAddress$EditAddress._processToNextStep(ListOfAddress.java:52)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.updateindividual.ListOfAddress._processToNextStep(ListOfAddress.java:43)
+	at scuda.perf.uitest.screens.updateindividual.ListOfAddress._processToNextStep(ListOfAddress.java:10)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.updateIndividualProfile(EnterpriseCustomerMaster.java:238)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.runRandomly(EnterpriseCustomerMaster.java:160)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:138)
+	at scuda.perf.uitest.App.threadRun(App.java:231)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Execution context was destroyed, most likely because of a navigation
+  name='Error
+  stack='Error:Execution context was destroyed, most likely because of a navigation
+Error
+    at captureRawStack (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\utils\isomorphic\stackTrace.js:32:17)
+    at LongStandingScope._race (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\utils\isomorphic\manualPromise.js:87:58)
+    at LongStandingScope.race (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\utils\isomorphic\manualPromise.js:80:17)
+    at FrameExecutionContext._raceAgainstContextDestroyed (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\javascript.js:58:40)
+    at FrameExecutionContext.evaluateWithArguments (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\javascript.js:68:17)
+    at async Object.evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\javascript.js:217:12)
+    at async Frame.evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\frames.js:593:19)
+    at async FrameDispatcher.evaluateExpression (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\dispatchers\frameDispatcher.js:76:68)
+    at async ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\progress.js:78:22)
+    at async FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\dispatchers\dispatcher.js:95:14)
+    at async DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-18440151359999493757\package\lib\server\dispatchers\dispatcher.js:329:22)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 25 more

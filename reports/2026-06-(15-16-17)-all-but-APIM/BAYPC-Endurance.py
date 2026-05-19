@@ -253,5 +253,25 @@ def _(api_sources, mo, s):
     return
 
 
+@app.cell
+def _(mo, t, ui_sources):
+    _df = mo.sql(
+        f"""
+        with t as (
+          {ui_sources}
+        )
+        select label
+             , count(*) as cnt
+             , count(nullif(success, True)) as err
+             , (case when err = 0 then null else round(err/cnt*100, 2) end) as "%err"
+          from t 
+          group by label
+          having "%err" > 0
+          order by 4 desc
+        """
+    )
+    return
+
+
 if __name__ == "__main__":
     app.run()

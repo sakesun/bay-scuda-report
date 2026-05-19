@@ -75,7 +75,7 @@ def _(datetime, timedelta):
 
 @app.cell
 def _(filter_for, list_errors_files, list_result_files):
-    scope = filter_for(2026, 5, 16, 1, 00)
+    scope = filter_for(2026, 5, 18, 22, 15)
     result_files = list_result_files(scope)
     error_files = list_errors_files(scope)
     return (result_files,)
@@ -115,11 +115,11 @@ def _(api_sources, mo):
             on success in (true)
             using min(elapsed) as min
                 , round(avg(elapsed)) as avg
-                , round(quantile_cont(elapsed, 0.90)) as p90
+                --, round(quantile_cont(elapsed, 0.90)) as p90
                 , round(quantile_cont(elapsed, 0.95)) as p95
-                , round(quantile_cont(elapsed, 0.98)) as p98
-                , round(quantile_cont(elapsed, 0.99)) as p99
-                , max(elapsed) as max
+                --, round(quantile_cont(elapsed, 0.98)) as p98
+                --, round(quantile_cont(elapsed, 0.99)) as p99
+                --, max(elapsed) as max
                 , count(*) as cnt
             group by label
             order by label
@@ -141,11 +141,11 @@ def _(mo, ui_sources):
             on success in (true)
             using min(elapsed) as min
                 , round(avg(elapsed)) as avg
-                , round(quantile_cont(elapsed, 0.90)) as p90
+                --, round(quantile_cont(elapsed, 0.90)) as p90
                 , round(quantile_cont(elapsed, 0.95)) as p95
-                , round(quantile_cont(elapsed, 0.98)) as p98
-                , round(quantile_cont(elapsed, 0.99)) as p99
-                , max(elapsed) as max
+                --, round(quantile_cont(elapsed, 0.98)) as p98
+                --, round(quantile_cont(elapsed, 0.99)) as p99
+                --, max(elapsed) as max
                 , count(*) as cnt
             group by label
             order by label

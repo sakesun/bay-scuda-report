@@ -1,0 +1,131 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1778157823453,327,Get Token,200,OK,UpdateJuristic 8-1,text,true,,3684,522,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,327,0,272
+1778157823453,321,Get Token,200,OK,GetIndividual 1-1,text,true,,3684,522,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,319,0,273
+1778157823453,321,Get Token,200,OK,GetIndividual 1-2,text,true,,3684,522,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,318,0,270
+1778157823463,320,Get Token,200,OK,GetJoint 9-2,text,true,,3684,522,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,320,0,262
+1778157823453,321,Get Token,200,OK,CreateJoint 11-1,text,true,,3684,522,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,321,0,275
+1778157823453,336,Get Token,200,OK,GetJoint 9-1,text,true,,3684,522,2,24,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,336,0,273
+1778157823453,321,Get Token,200,OK,UpdateIndividual 4-1,text,true,,3684,522,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,321,0,270
+1778157823549,228,Get Token,200,OK,CreateJoint 11-2,text,true,,3684,522,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,228,0,179
+1778157823453,329,Get Token,200,OK,UpdateIndividual 4-2,text,true,,3684,522,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,329,0,272
+1778157823453,321,Get Token,200,OK,SearchIndividual 2-1,text,true,,2894,426,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,317,0,273
+1778157823453,321,Get Token,200,OK,GetJuristic 5-1,text,true,,3684,522,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,320,0,275
+1778157823453,321,Get Token,200,OK,SearchJuristic 6-2,text,true,,2894,426,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,317,0,272
+1778157823453,336,Get Token,200,OK,CreateJuristic 7-2,text,true,,3684,522,2,24,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,336,0,275
+1778157823453,321,Get Token,200,OK,UpdateJoint 12-1,text,true,,3684,522,2,23,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,318,0,273
+1778157823789,52,Get Token,200,OK,SearchJoint 10-2,text,true,,2894,426,2,24,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,52,0,24
+1778157824069,86,SearchJuristic,200,OK,SearchJuristic 6-3,text,true,,622,2612,3,28,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,86,0,38
+1778157824069,56,SearchJoint,200,OK,SearchJoint 10-2,text,true,,622,2628,2,27,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,56,0,0
+1778157824069,51,SearchIndividual,200,OK,SearchIndividual 2-1,text,true,,622,2641,2,27,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,51,0,0
+1778157824071,49,SearchJuristic,200,OK,SearchJuristic 6-2,text,true,,622,2634,3,27,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,49,0,0
+1778157824426,60,Get Token,200,OK,CreateIndividual 3-3,text,true,,3684,522,3,25,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,60,0,23
+1778157824463,58,SearchJoint,200,OK,SearchJoint 10-3,text,true,,622,2628,2,25,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,58,0,26
+1778157824756,106,SearchIndividual,200,OK,SearchIndividual 2-3,text,true,,622,2614,2,28,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,106,0,32
+1778157825057,64,SearchIndividual,200,OK,SearchIndividual 2-4,text,true,,622,2614,2,29,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,63,0,22
+1778157825324,37,SearchJuristic,200,OK,SearchJuristic 6-4,text,true,,622,2619,2,31,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,37,0,21
+1778157826078,53,SearchJuristic,200,OK,SearchJuristic 6-5,text,true,,622,2628,2,41,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,53,0,34
+1778157826177,42,SearchJoint,200,OK,SearchJoint 10-5,text,true,,622,2628,3,42,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,42,0,26
+1778157828553,32,SearchJoint,200,OK,SearchJoint 10-7,text,true,,622,2628,4,64,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,32,0,21
+1778157828920,36,SearchIndividual,200,OK,SearchIndividual 2-8,text,true,,622,2635,5,69,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,36,0,21
+1778157829083,43,SearchJoint,200,OK,SearchJoint 10-8,text,true,,622,2628,4,72,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,43,0,30
+1778157829303,221,GetJoint,200,OK,GetJoint 9-8,text,true,,1553,3531,9,79,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/joint/getprofile,221,0,18
+1778157829627,49,SearchJuristic,200,OK,SearchJuristic 6-9,text,true,,622,2605,5,83,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,49,0,37
+1778157829456,470,UpdateJuristic,200,OK,UpdateJuristic 8-8,text,true,,801,5825,9,86,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/updateprofile,470,0,21
+1778157829914,33,SearchJuristic,200,OK,SearchJuristic 6-11,text,true,,5514,2607,6,85,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,33,0,21
+1778157830000,32,SearchIndividual,200,OK,SearchIndividual 2-10,text,true,,622,2614,6,86,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,32,0,16
+1778157830096,29,SearchJoint,200,OK,SearchJoint 10-10,text,true,,622,2628,5,87,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,29,0,18
+1778157829640,883,UpdateJoint,200,OK,UpdateJoint 12-9,text,true,,801,3615,10,89,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/joint/updateprofile,883,0,24
+1778157830804,26,SearchIndividual,200,OK,SearchIndividual 2-11,text,true,,622,2614,6,101,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,26,0,11
+1778157830908,27,SearchJuristic,200,OK,SearchJuristic 6-12,text,true,,622,2603,6,101,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,26,0,16
+1778157829983,939,GetIndividual,200,OK,GetIndividual 1-10,text,true,,3856,3589,11,101,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/getprofile,939,0,23
+1778157831026,33,SearchJoint,200,OK,SearchJoint 10-12,text,true,,622,2628,6,102,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,33,0,17
+1778157831350,148,UpdateIndividual,429,Too Many Requests,UpdateIndividual 4-13,text,false,,606,4228,13,113,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/updateprofile,148,0,20
+1778157831467,36,SearchJoint,200,OK,SearchJoint 10-13,text,true,,622,2628,6,112,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,36,0,21
+1778157831361,625,GetIndividual,429,Too Many Requests,GetIndividual 1-13,text,false,,600,3589,12,121,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/getprofile,625,0,18
+1778157832123,29,SearchIndividual,200,OK,SearchIndividual 2-15,text,true,,622,2614,9,124,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,29,0,19
+1778157832402,31,SearchJoint,200,OK,SearchJoint 10-14,text,true,,622,2628,6,129,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,31,0,21
+1778157832553,43,SearchJoint,200,OK,SearchJoint 10-15,text,true,,622,2628,6,134,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,43,0,31
+1778157832943,31,SearchIndividual,200,OK,SearchIndividual 2-16,text,true,,622,2614,9,140,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,31,0,19
+1778157832953,32,SearchJuristic,200,OK,SearchJuristic 6-16,text,true,,622,2622,9,139,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,32,0,20
+1778157833060,33,SearchIndividual,200,OK,SearchIndividual 2-17,text,true,,622,2642,9,143,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,33,0,20
+1778157833130,32,SearchIndividual,200,OK,SearchIndividual 2-18,text,true,,622,2614,9,143,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,32,0,18
+1778157833300,33,SearchJoint,200,OK,SearchJoint 10-16,text,true,,622,2628,6,149,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,33,0,19
+1778157833411,28,SearchJoint,200,OK,SearchJoint 10-17,text,true,,622,2628,6,150,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,28,0,17
+1778157833504,32,SearchJuristic,200,OK,SearchJuristic 6-17,text,true,,5177,2607,9,153,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,32,0,19
+1778157833521,27,SearchJoint,200,OK,SearchJoint 10-18,text,true,,622,2628,6,153,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,27,0,17
+1778157833731,24,SearchJuristic,200,OK,SearchJuristic 6-18,text,true,,622,2612,9,159,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,24,0,14
+1778157830534,3454,UpdateIndividual,200,OK,UpdateIndividual 4-10,text,true,,801,5545,18,164,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/updateprofile,3454,0,37
+1778157833992,36,SearchJoint,200,OK,SearchJoint 10-19,text,true,,622,2628,6,165,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,35,0,24
+1778157834018,25,SearchIndividual,200,OK,SearchIndividual 2-19,text,true,,622,2610,9,164,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,25,0,13
+1778157834149,32,SearchJoint,200,OK,SearchJoint 10-20,text,true,,622,2628,6,166,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,32,0,20
+1778157834441,30,SearchIndividual,200,OK,SearchIndividual 2-20,text,true,,622,2606,9,173,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,30,0,17
+1778157834543,36,SearchJoint,200,OK,SearchJoint 10-21,text,true,,622,2628,6,177,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,36,0,20
+1778157834593,33,SearchJuristic,200,OK,SearchJuristic 6-21,text,true,,620,2606,11,177,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,33,0,20
+1778157834638,38,SearchIndividual,200,OK,SearchIndividual 2-21,text,true,,622,2605,9,178,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,38,0,20
+1778157831625,3076,UpdateJuristic,429,Too Many Requests,UpdateJuristic 8-13,text,false,,602,5833,19,177,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/updateprofile,3076,0,21
+1778157830830,4060,UpdateJuristic,200,OK,UpdateJuristic 8-11,text,true,,801,5737,19,185,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/updateprofile,4060,0,21
+1778157834983,40,SearchJoint,200,OK,SearchJoint 10-22,text,true,,622,2628,6,186,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,40,0,18
+1778157835170,50,SearchIndividual,200,OK,SearchIndividual 2-22,text,true,,622,2611,9,193,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,49,0,28
+1778157835187,102,SearchJuristic,200,OK,SearchJuristic 6-22,text,true,,622,2640,11,194,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,102,0,21
+1778157835402,36,SearchJuristic,200,OK,SearchJuristic 6-23,text,true,,622,2608,11,198,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,36,0,12
+1778157835473,32,SearchJoint,200,OK,SearchJoint 10-23,text,true,,621,2627,6,199,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,32,0,21
+1778157835504,30,SearchJuristic,200,OK,SearchJuristic 6-24,text,true,,3437,2613,11,199,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,30,0,19
+1778157835684,36,SearchIndividual,200,OK,SearchIndividual 2-23,text,true,,621,2613,9,205,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,36,0,22
+1778157835839,37,SearchJoint,200,OK,SearchJoint 10-24,text,true,,622,2628,6,208,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,37,0,21
+1778157835939,30,SearchJoint,200,OK,SearchJoint 10-25,text,true,,622,2628,6,211,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,29,0,19
+1778157836039,33,SearchIndividual,200,OK,SearchIndividual 2-25,text,true,,622,2624,10,214,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,33,0,22
+1778157836136,36,SearchJoint,200,OK,SearchJoint 10-26,text,true,,622,2628,6,215,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,36,0,19
+1778157836390,38,SearchIndividual,200,OK,SearchIndividual 2-26,text,true,,622,2614,10,219,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,38,0,23
+1778157836527,26,SearchJoint,200,OK,SearchJoint 10-27,text,true,,622,2628,6,224,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,26,0,15
+1778157836782,45,SearchIndividual,200,OK,SearchIndividual 2-27,text,true,,622,2656,10,232,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,45,0,23
+1778157831678,5212,UpdateJoint,200,OK,UpdateJoint 12-13,text,true,,801,3615,26,234,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/joint/updateprofile,5212,0,21
+1778157836953,31,SearchJuristic,200,OK,SearchJuristic 6-28,text,true,,622,2608,14,238,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,31,0,19
+1778157824222,12881,CreateJuristic,201,Created,CreateJuristic 7-2,text,true,,1173,8447,28,239,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/createprofile,12881,0,0
+1778157837168,37,SearchIndividual,200,OK,SearchIndividual 2-29,text,true,,622,2614,11,245,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,37,0,21
+1778157838288,33,SearchJuristic,200,OK,SearchJuristic 6-35,text,true,,622,2612,20,297,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,33,0,17
+1778157832453,6245,GetJoint,429,Too Many Requests,GetJoint 9-15,text,false,,590,3531,34,308,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/joint/getprofile,6245,0,23
+1778157832253,6540,GetJuristic,429,Too Many Requests,GetJuristic 5-15,text,false,,596,3534,35,312,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/getprofile,6540,0,25
+1778157838899,33,SearchIndividual,200,OK,SearchIndividual 2-36,text,true,,11718,2605,17,318,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,33,0,19
+1778157838979,42,SearchJuristic,200,OK,SearchJuristic 6-37,text,true,,622,2609,21,320,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,42,0,29
+1778157832171,7118,UpdateIndividual,429,Too Many Requests,UpdateIndividual 4-15,text,false,,606,4228,35,333,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/updateprofile,7118,0,22
+1778157839384,29,SearchJuristic,200,OK,SearchJuristic 6-39,text,true,,622,2612,22,336,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,29,0,19
+1778157832525,6979,CreateIndividual,429,Too Many Requests,CreateIndividual 3-14,text,false,,606,8468,39,339,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/createprofile,6979,0,20
+1778157833650,5935,CreateIndividual,429,Too Many Requests,CreateIndividual 3-17,text,false,,606,8586,39,343,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/createprofile,5935,0,20
+1778157832996,6590,GetIndividual,429,Too Many Requests,GetIndividual 1-16,text,false,,600,3589,35,343,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/getprofile,6590,0,20
+1778157832505,7202,UpdateJuristic,429,Too Many Requests,UpdateJuristic 8-14,text,false,,602,5865,36,348,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/updateprofile,7202,0,18
+1778157832690,7416,CreateIndividual,429,Too Many Requests,CreateIndividual 3-15,text,false,,606,8092,40,362,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/createprofile,7416,0,21
+1778157832915,7273,UpdateIndividual,429,Too Many Requests,UpdateIndividual 4-16,text,false,,606,5600,37,366,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/updateprofile,7273,0,23
+1778157840313,50,SearchIndividual,200,OK,SearchIndividual 2-41,text,true,,14180,2605,21,377,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,49,0,27
+1778157840349,41,SearchJoint,200,OK,SearchJoint 10-42,text,true,,622,2628,20,376,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,41,0,20
+1778157840658,31,SearchJuristic,200,OK,SearchJuristic 6-43,text,true,,4829,2607,25,388,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,31,0,19
+1778157833250,7442,CreateJuristic,429,Too Many Requests,CreateJuristic 7-17,text,false,,602,8298,42,387,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/createprofile,7442,0,24
+1778157833325,7513,CreateJuristic,429,Too Many Requests,CreateJuristic 7-18,text,false,,602,7779,41,391,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/createprofile,7513,0,19
+1778157840879,30,SearchJoint,200,OK,SearchJoint 10-43,text,true,,622,2628,20,391,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,30,0,13
+1778157833094,7894,UpdateJuristic,429,Too Many Requests,UpdateJuristic 8-16,text,false,,602,5742,39,393,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/updateprofile,7894,0,19
+1778157833579,7434,GetJuristic,429,Too Many Requests,GetJuristic 5-18,text,false,,596,3534,43,396,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/getprofile,7434,0,18
+1778157840992,36,SearchJoint,200,OK,SearchJoint 10-44,text,true,,622,2628,20,397,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,36,0,23
+1778157834215,6889,GetJuristic,429,Too Many Requests,GetJuristic 5-20,text,false,,596,3534,43,399,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/getprofile,6889,0,23
+1778157833501,7605,GetIndividual,429,Too Many Requests,GetIndividual 1-17,text,false,,600,3589,41,398,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/getprofile,7604,0,18
+1778157841114,34,SearchIndividual,200,OK,SearchIndividual 2-46,text,true,,622,2624,25,400,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,34,0,20
+1778157841118,30,SearchJuristic,200,OK,SearchJuristic 6-45,text,true,,622,2612,26,400,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,30,0,19
+1778157841181,25,SearchJuristic,200,OK,SearchJuristic 6-46,text,true,,622,2628,27,404,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,25,0,10
+1778157841190,27,SearchJoint,200,OK,SearchJoint 10-45,text,true,,622,2628,20,404,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,27,0,17
+1778157841198,43,SearchJuristic,200,OK,SearchJuristic 6-47,text,true,,622,2634,26,405,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/juristic/searchprofile,43,0,28
+1778157833168,8122,UpdateIndividual,429,Too Many Requests,UpdateIndividual 4-17,text,false,,606,5688,42,406,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/updateprofile,8122,0,23
+1778157833093,8196,CreateIndividual,429,Too Many Requests,CreateIndividual 3-16,text,false,,606,8351,46,406,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/createprofile,8196,0,17
+1778157834399,7010,CreateJuristic,429,Too Many Requests,CreateJuristic 7-19,text,false,,602,7924,42,411,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/juristic/createprofile,7010,0,21
+1778157833979,7430,GetIndividual,429,Too Many Requests,GetIndividual 1-19,text,false,,600,3589,43,411,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/getprofile,7430,0,22
+1778157834488,6922,CreateIndividual,429,Too Many Requests,CreateIndividual 3-19,text,false,,606,7882,46,409,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/createprofile,6922,0,24
+1778157833556,7854,GetIndividual,429,Too Many Requests,GetIndividual 1-18,text,false,,600,3589,42,409,https://api-scuda.uat.oci.krungsri.tech/ic/api/v1/customer/individual/getprofile,7854,0,18
+1778157841631,29,SearchIndividual,200,OK,SearchIndividual 2-47,text,true,,13865,2605,25,420,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,28,0,15
+1778157841649,29,SearchJoint,200,OK,SearchJoint 10-47,text,true,,622,2628,21,419,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/joint/searchprofile,29,0,18
+1778157841849,25,SearchIndividual,200,OK,SearchIndividual 2-48,text,true,,9877,2606,25,429,https://api-scuda.uat.oci.krungsri.tech/ords/api/v1/customer/individual/searchprofile,25,0,13
+1778157823453,18433,Get Token,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,CreateIndividual 3-1,text,false,,2799,0,48,427,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,0,0,18433
+1778157823453,18462,Get Token,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,SearchJuristic 6-1,text,false,,2799,0,8,313,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,0,0,18462
+1778157823453,18467,Get Token,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,SearchJoint 10-1,text,false,,2799,0,5,278,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,0,0,18467
+1778157823454,18470,Get Token,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,UpdateJuristic 8-2,text,false,,2799,0,22,253,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,0,0,18470
+1778157823657,18272,Get Token,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,GetJuristic 5-2,text,false,,2799,0,31,212,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,0,0,18272
+1778157823453,18476,Get Token,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,CreateJuristic 7-1,text,false,,2799,0,19,212,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,0,0,18476
+1778157823453,18487,Get Token,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,SearchIndividual 2-2,text,false,,2799,0,16,143,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,0,0,18487
+1778157823453,18495,Get Token,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,CreateIndividual 3-2,text,false,,2799,0,10,84,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,0,0,18495
+1778157823453,18516,Get Token,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,UpdateJoint 12-2,text,false,,2799,0,12,12,https://api-scuda.uat.oci.krungsri.tech/oauth2/v1/token,0,0,18516

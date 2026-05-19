@@ -69,13 +69,23 @@ def _(datetime, timedelta):
         dt2 = datetime(*end) + m2
         def f(name): return (_prefix(dt1) <= name <= _prefix(dt2))
         return f
+    def merge_filters(*filters):
+        def f(name):
+            return any(ff(name) for ff in filters)
+        return f
 
-    return (filter_for,)
+    return filter_for, merge_filters
 
 
 @app.cell
-def _(filter_for, list_errors_files, list_result_files):
-    scope = filter_for(2026, 5, 16, 1, 00)
+def _(filter_for, list_errors_files, list_result_files, merge_filters):
+    scope = merge_filters(
+        filter_for(2026, 5, 16,  5, 30),
+        filter_for(2026, 5, 16,  6, 46),
+        filter_for(2026, 5, 16, 15, 57),
+        filter_for(2026, 5, 16, 17, 13),
+        filter_for(2026, 5, 16, 18, 29),
+        filter_for(2026, 5, 16, 19, 45))
     result_files = list_result_files(scope)
     error_files = list_errors_files(scope)
     return (result_files,)

@@ -1,0 +1,81 @@
+Error at: https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/ui/v1/signin
+
+com.microsoft.playwright.TimeoutError
+
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("div.oj-messagebanner-confirmation div.oj-flex-item span").or(locator("div.oj-messagebanner-error div.oj-flex-item span")) to be visible
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/userlogout?endUri=webApps%2Fscuda%2F" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/userlogout?endUri=webApps%2Fscuda%2F"
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/sso/v1/user/logout?nonce=b7d28a9e-1588-426c-b8ff-25ca719d39c3&tenant=krungsricloud&domain_ocid=ocid1.domain.oc1..aaaaaaaaen66vze…" navigation to finish...
+-     - navigated to "https://login.microsoftonline.com/4c08454e-c2f0-4227-b5e5-da2a8f362c82/saml2?SAMLRequest=hVPRbtsgFP0Viz5jY4wdB8XpqmaVIqXZtKRTt5eIAE5ZbUgBL%2BnfDye11FVq%2B3Ifrs6559xzYXJ5bJvor7ROGV2BNEYgkpobofSuAnfrG1…"
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/sp/slo?SAMLResponse=fZJPb9QwEMW%2fSuS748T5Y8dKIlXtZaWlILZUggty7HEJSuzgcVj49ojd9rCXHp80b2Z%2bb6ZHvS6bOoaXsKfPgFvwCNnhYSDfq…" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/authorize?response_mode=form_post&response_type=id_token&scope=openid&IDCS_CG_ENC_VER=v2&state=BPfwNHbyHznyAnQlLtcTqDc…"
+
+
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("div.oj-messagebanner-confirmation div.oj-flex-item span").or(locator("div.oj-messagebanner-error div.oj-flex-item span")) to be visible
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/userlogout?endUri=webApps%2Fscuda%2F" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/userlogout?endUri=webApps%2Fscuda%2F"
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/sso/v1/user/logout?nonce=b7d28a9e-1588-426c-b8ff-25ca719d39c3&tenant=krungsricloud&domain_ocid=ocid1.domain.oc1..aaaaaaaaen66vze…" navigation to finish...
+-     - navigated to "https://login.microsoftonline.com/4c08454e-c2f0-4227-b5e5-da2a8f362c82/saml2?SAMLRequest=hVPRbtsgFP0Viz5jY4wdB8XpqmaVIqXZtKRTt5eIAE5ZbUgBL%2BnfDye11FVq%2B3Ifrs6559xzYXJ5bJvor7ROGV2BNEYgkpobofSuAnfrG1…"
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/sp/slo?SAMLResponse=fZJPb9QwEMW%2fSuS748T5Y8dKIlXtZaWlILZUggty7HEJSuzgcVj49ojd9rCXHp80b2Z%2bb6ZHvS6bOoaXsKfPgFvwCNnhYSDfq…" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/authorize?response_mode=form_post&response_type=id_token&scope=openid&IDCS_CG_ENC_VER=v2&state=BPfwNHbyHznyAnQlLtcTqDc…"
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:985)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:625)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5418)
+	at scuda.perf.uitest.screens.createindividual.Step8_Completion.lambda$_processToNextStep$0(Step8_Completion.java:31)
+	at scuda.perf.uitest.screens.Screen.measure(Screen.java:91)
+	at scuda.perf.uitest.screens.Screen.measure(Screen.java:84)
+	at scuda.perf.uitest.screens.createindividual.Step8_Completion._processToNextStep(Step8_Completion.java:29)
+	at scuda.perf.uitest.screens.createindividual.Step8_Completion._processToNextStep(Step8_Completion.java:10)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.createIndividualProfile(EnterpriseCustomerMaster.java:174)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.runRandomly(EnterpriseCustomerMaster.java:158)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:138)
+	at scuda.perf.uitest.App.threadRun(App.java:231)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("div.oj-messagebanner-confirmation div.oj-flex-item span").or(locator("div.oj-messagebanner-error div.oj-flex-item span")) to be visible
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/userlogout?endUri=webApps%2Fscuda%2F" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/userlogout?endUri=webApps%2Fscuda%2F"
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/sso/v1/user/logout?nonce=b7d28a9e-1588-426c-b8ff-25ca719d39c3&tenant=krungsricloud&domain_ocid=ocid1.domain.oc1..aaaaaaaaen66vze…" navigation to finish...
+-     - navigated to "https://login.microsoftonline.com/4c08454e-c2f0-4227-b5e5-da2a8f362c82/saml2?SAMLRequest=hVPRbtsgFP0Viz5jY4wdB8XpqmaVIqXZtKRTt5eIAE5ZbUgBL%2BnfDye11FVq%2B3Ifrs6559xzYXJ5bJvor7ROGV2BNEYgkpobofSuAnfrG1…"
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/sp/slo?SAMLResponse=fZJPb9QwEMW%2fSuS748T5Y8dKIlXtZaWlILZUggty7HEJSuzgcVj49ojd9rCXHp80b2Z%2bb6ZHvS6bOoaXsKfPgFvwCNnhYSDfq…" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/authorize?response_mode=form_post&response_type=id_token&scope=openid&IDCS_CG_ENC_VER=v2&state=BPfwNHbyHznyAnQlLtcTqDc…"
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 19 more

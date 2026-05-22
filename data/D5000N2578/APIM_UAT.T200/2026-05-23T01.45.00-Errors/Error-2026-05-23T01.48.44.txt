@@ -1,0 +1,61 @@
+Error at: chrome-error://chromewebdata/
+
+com.microsoft.playwright.PlaywrightException
+
+Error {
+  message='net::ERR_TIMED_OUT
+  name='Error
+  stack='Error: net::ERR_TIMED_OUT
+    at FrameManager.frameAbortedNavigation (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\frames.js:206:14)
+    at FrameManager.requestFailed (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\frames.js:257:12)
+    at CRNetworkManager._onLoadingFailed (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\chromium\crNetworkManager.js:461:55)
+    at CRSession.emit (node:events:519:28)
+    at C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\chromium\crConnection.js:138:14
+}
+Call log:
+-   - waiting for navigation until "load"
+
+
+com.microsoft.playwright.PlaywrightException: Error {
+  message='net::ERR_TIMED_OUT
+  name='Error
+  stack='Error: net::ERR_TIMED_OUT
+    at FrameManager.frameAbortedNavigation (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\frames.js:206:14)
+    at FrameManager.requestFailed (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\frames.js:257:12)
+    at CRNetworkManager._onLoadingFailed (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\chromium\crNetworkManager.js:461:55)
+    at CRSession.emit (node:events:519:28)
+    at C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\chromium\crConnection.js:138:14
+}
+Call log:
+-   - waiting for navigation until "load"
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.PageImpl.reloadImpl(PageImpl.java:1098)
+	at com.microsoft.playwright.impl.PageImpl.reload(PageImpl.java:1085)
+	at com.microsoft.playwright.Page.reload(Page.java:6282)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.getReady(EnterpriseCustomerMaster.java:76)
+	at scuda.perf.uitest.App.threadRun(App.java:228)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='net::ERR_TIMED_OUT
+  name='Error
+  stack='Error: net::ERR_TIMED_OUT
+    at FrameManager.frameAbortedNavigation (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\frames.js:206:14)
+    at FrameManager.requestFailed (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\frames.js:257:12)
+    at CRNetworkManager._onLoadingFailed (C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\chromium\crNetworkManager.js:461:55)
+    at CRSession.emit (node:events:519:28)
+    at C:\Users\7i120092\AppData\Local\Temp\playwright-java-3942754721180739709\package\lib\server\chromium\crConnection.js:138:14
+}
+Call log:
+-   - waiting for navigation until "load"
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 11 more

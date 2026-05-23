@@ -227,8 +227,25 @@ def _(full_sources, mo, t):
 
 
 @app.cell
+def _(full_sources, mo, t):
+    toplot2 = mo.sql(
+        f"""
+        with t as (
+          {full_sources}
+        )
+        select to_timestamp(timeStamp/1000) AT TIME ZONE 'Asia/Bangkok' as timeStamp
+             , elapsed
+             , label
+             , success
+        from t
+        """
+    )
+    return
+
+
+@app.cell
 def _(alt, mo, toplot):
-    chart = alt.Chart(toplot).mark_line().encode(
+    chart = alt.Chart(toplot).mark_point().encode(
         x='timeStamp:T',
         y='elapsed:Q',
         color='label:N'    

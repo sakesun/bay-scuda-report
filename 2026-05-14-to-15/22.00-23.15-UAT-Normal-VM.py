@@ -267,7 +267,6 @@ def _(api_sources, mo, select_percentiles, select_percentiles_columns):
             UNPIVOT R ON {','.join(select_percentiles_columns)}
             INTO NAME P VALUE elapsed)
           select P::numeric as P, elapsed from U where P <> '100'
-    
         """,
         output=False
     )

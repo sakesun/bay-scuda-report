@@ -1,0 +1,27 @@
+Error at: https://scuda.uat.oci.krungsri.tech/ic/builder/rt/SCUDA/live/webApps/scuda/vp/shell/main/main-juristic-create?currentStep=1
+
+java.lang.RuntimeException
+
+Cannot find element with part '$variables.additionalIdentiferVar.identificationNumber' in value after tabbing 100 times.
+
+java.lang.RuntimeException: Cannot find element with part '$variables.additionalIdentiferVar.identificationNumber' in value after tabbing 100 times.
+	at scuda.perf.uitest.screens.OracleJet.tabTo(OracleJet.java:87)
+	at scuda.perf.uitest.screens.OracleJet.put(OracleJet.java:115)
+	at scuda.perf.uitest.screens.createjuristic.Step1_Identification.lambda$addAdditional$2(Step1_Identification.java:67)
+	at scuda.perf.uitest.screens.OracleJet.persist(OracleJet.java:239)
+	at scuda.perf.uitest.screens.createjuristic.Step1_Identification.addAdditional(Step1_Identification.java:61)
+	at scuda.perf.uitest.screens.createjuristic.Step1_Identification.lambda$_processToNextStep$1(Step1_Identification.java:40)
+	at scuda.perf.uitest.screens.OracleJet.lambda$persist$2(OracleJet.java:256)
+	at scuda.perf.uitest.screens.OracleJet.persist(OracleJet.java:239)
+	at scuda.perf.uitest.screens.OracleJet.persist(OracleJet.java:255)
+	at scuda.perf.uitest.screens.createjuristic.Step1_Identification._processToNextStep(Step1_Identification.java:35)
+	at scuda.perf.uitest.screens.createjuristic.Step1_Identification._processToNextStep(Step1_Identification.java:13)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.createJuristicProfile(EnterpriseCustomerMaster.java:195)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.runRandomly(EnterpriseCustomerMaster.java:159)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:138)
+	at scuda.perf.uitest.App.threadRun(App.java:231)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)

@@ -1,0 +1,57 @@
+Error at: https://adfsuat.krungsri.com/adfs/ls/?client-request-id=9bb42623-8bc7-4be8-8c39-ec17f74480a3&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=LoginOptions%3D3%26estsredirect%3d2%26estsrequest%3drQQIARAArc29axNRAADwd81Ha2j1GkEdBAuKS71c7uXlkhwUjDYfrU1b28SiS3l5713ymvto771coyA4SUWHznVScREREbcuRQehOHR2qk4lCOpkEAfRv8H1t_wSwJpvS7kuLF3nlAgNE1bAzZyNTVxAkNk4A5ltm5CSHGJpmk1xyjzJ5e2UH2DiMOL4XZoivmshlNFtRoNkQj1_8e3jDw-Prj0qfD39c_resxdK_f8kfwM9NHSxrgvhv1POcao1pI06LQmhvMMbZp6V6GLnCtvolBeIdqAoR4ryaSi2jF0H_hoyu4Fn-VhwYXnYZcKSxFou1uYsI2X8E0412w9cLC3mYu4UKQ2YEDuRaKFlXn0TuYBIOo-yiGkE2mkNQZjTmlmW1SiGOG9nTEjy8EvkrBBkVTIhV9P5y03sdTpB12uJgKc8Jg-io_3oaDpijYwkVHAGTIBBVHkaSybU5_fvahP93eLL8MGpjz9Ogv2Y7qDF2lJdVm7MTU-2w1lH4EZprZep9tpcr7okJKiHw4pe35TXpwzL2I6P7cfB97iyNQx2hsHeMWVvDAyOb__-vPv-yatv1f6JS8Wm3Jyp8yxxyJoXtH1qlMo6qdQ2zMnczEJoVOiKVy_fmp9duTn1WgWHKjgcB4NxsJUEfwA1&cbcxt=&username=ssc_test_08%40bankkrungsri.net&mkt=&lc=
+
+com.microsoft.playwright.TimeoutError
+
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-14916199854687718815\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-14916199854687718815\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-14916199854687718815\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("div#loginHeader")
+
+
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-14916199854687718815\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-14916199854687718815\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-14916199854687718815\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("div#loginHeader")
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:482)
+	at com.microsoft.playwright.impl.FrameImpl.innerText(FrameImpl.java:473)
+	at com.microsoft.playwright.impl.LocatorImpl.innerText(LocatorImpl.java:370)
+	at com.microsoft.playwright.Locator.innerText(Locator.java:3875)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.proceedSignInEntry(EnterpriseCustomerMaster.java:332)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.getReady(EnterpriseCustomerMaster.java:56)
+	at scuda.perf.uitest.App.threadRun(App.java:228)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-14916199854687718815\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-14916199854687718815\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-14916199854687718815\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("div#loginHeader")
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 13 more

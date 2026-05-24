@@ -69,13 +69,17 @@ def _(datetime, timedelta):
         dt2 = datetime(*end) + m2
         def f(name): return (_prefix(dt1) <= name <= _prefix(dt2))
         return f
+    def merge_filters(*filters):
+        def f(name):
+            return any(ff(name) for ff in filters)
+        return f
 
     return (filter_for,)
 
 
 @app.cell
 def _(filter_for, list_errors_files, list_result_files):
-    scope = filter_for(2026, 5, 18, 23, 45)
+    scope = filter_for(2026, 5, 19, 19, 30)
     result_files = list_result_files(scope)
     error_files = list_errors_files(scope)
     return (result_files,)
@@ -143,9 +147,9 @@ def _(mo, ui_sources):
                 , round(avg(elapsed)) as avg
                 , round(quantile_cont(elapsed, 0.90)) as p90
                 , round(quantile_cont(elapsed, 0.95)) as p95
-                , round(quantile_cont(elapsed, 0.98)) as p98
-                , round(quantile_cont(elapsed, 0.99)) as p99
-                , max(elapsed) as max
+                --, round(quantile_cont(elapsed, 0.98)) as p98
+                --, round(quantile_cont(elapsed, 0.99)) as p99
+                --, max(elapsed) as max
                 , count(*) as cnt
             group by label
             order by label
@@ -219,7 +223,7 @@ def _(full_sources, mo, t):
              , elapsed
              , label
              , success
-        from t where not success
+          from t where not success
         """,
         output=False
     )
@@ -228,23 +232,10 @@ def _(full_sources, mo, t):
 
 @app.cell
 def _(alt, mo, toplot):
-    chart = alt.Chart(toplot).mark_point().encode(
+    chart = alt.Chart(toplot).mark_line().encode(
         x='timeStamp:T',
         y='elapsed:Q',
-        color='label:N'    
-    ).properties(width='container').interactive() # Allows panning/zooming
-
-    time_plot = mo.ui.altair_chart(chart)
-    time_plot
-    return
-
-
-@app.cell(hide_code=True)
-def _(alt, mo, toplot):
-    chart = alt.Chart(toplot).mark_point().encode(
-        x='timeStamp:T',
-        y='elapsed:Q',
-        color='label:N'    
+        color='label:N'
     ).properties(width='container').interactive() # Allows panning/zooming
 
     time_plot = mo.ui.altair_chart(chart)

@@ -7,12 +7,14 @@ requires-python = ">=3.13"
 dependencies = [
     "altair>=6.1.0",
     "duckdb>=1.5.2",
+    "great-tables>=0.21.0",
     "marimo>=0.23.4",
     "nbconvert>=7.17.1",
     "nbformat>=5.10.4",
     "pandas>=3.0.2",
     "playwright>=1.59.0",
     "pyarrow>=24.0.0",
+    "ruff>=0.15.13",
     "sqlglot>=30.6.0",
     "vega-datasets>=0.9.0",
 ]

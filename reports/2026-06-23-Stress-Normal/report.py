@@ -5,7 +5,7 @@
 
 import marimo
 
-__generated_with = "0.23.8"
+__generated_with = "0.23.4"
 app = marimo.App(width="medium")
 
 
@@ -51,16 +51,11 @@ def _(GT, Path, datetime, mo, pd, timedelta):
 
     def files_table(files, *, tab_header=None):
         filenames = [f for f in files]
-        d = pd.DataFrame(files, columns=['File Name'])
-        d['size'] = d['File Name'].apply(lambda v: (data_dir / v).stat().st_size)
-        r = GT(d)
+        r = GT(pd.DataFrame(files, columns=['File Name']))
         if tab_header:
             if isinstance(tab_header, str): r = r.tab_header(tab_header)
             if isinstance(tab_header, dict): r = r.tab_header(**tab_header)
         r = r.cols_align('left')
-        r = r.cols_align(align="right", columns=["size"])
-        r = r.fmt_number(columns="size")
-        r = r.tab_options(table_body_vlines_style='solid')
         r = r.opt_vertical_padding(scale=0)
         return r
 
@@ -127,7 +122,7 @@ def _(GT, Path, datetime, mo, pd, timedelta):
         IS_API,
         IS_UI,
         files_table,
-        filter_for,
+        filter_for_range,
         list_errors_files,
         list_result_files,
         with_src_from_files,
@@ -283,15 +278,51 @@ def _(
 
 
 @app.cell
-def _(ws):
-    ws.api.percentiles()
-    return
+def _(WorkSet, pd):
+    class WorkSeries:
+        def __init__(self, defs, create_workset=None):
+            self.defs = defs
+            if create_workset is None: create_workset = WorkSet
+            self.sets = { k: create_workset(scope) for (k, scope) in defs.items() }
+        @property
+        def api(self):
+            return WorkSeries(self.defs, lambda d: WorkSet(d).api)
+        @property
+        def ui(self):
+            return WorkSeries(self.defs, lambda d: WorkSet(d).ui)
+        def error_rates(self):
+            t = None
+            for (k, v) in self.sets.items():
+                tn = v.error_rates().rename(columns={'%err': f'@{k}'})[['label', f'@{k}']]
+                t = tn if t is None else pd.merge(t, tn, how='outer')
+            return t
+        def response_times(self, column='p95'):
+            t = None
+            for (k, v) in self.sets.items():
+                tn = v.response_times().rename(columns={column: f'@{k}'})[['label', f'@{k}']]
+                t = tn if t is None else pd.merge(t, tn, how='outer')
+            return t
+
+    return (WorkSeries,)
 
 
 @app.cell
-def _(WorkSet, filter_for):
-    ws = WorkSet(filter_for(2026, 5, 19, 21, 00))
-    return (ws,)
+def _(WorkSeries, WorkSet, filter_for_range):
+    ws = WorkSet(filter_for_range([2026, 5, 23,  1, 00], [2026, 5, 23,  4, 00]))
+    series = WorkSeries({
+        '200': filter_for_range([2026, 5, 23,  1, 00], [2026, 5, 23,  1, 10]),
+        '210': filter_for_range([2026, 5, 23,  1, 15], [2026, 5, 23,  1, 25]),
+        '220': filter_for_range([2026, 5, 23,  1, 30], [2026, 5, 23,  1, 40]),
+        '230': filter_for_range([2026, 5, 23,  1, 45], [2026, 5, 23,  1, 55]),
+        '240': filter_for_range([2026, 5, 23,  2, 00], [2026, 5, 23,  2, 10]),
+        '250': filter_for_range([2026, 5, 23,  2, 15], [2026, 5, 23,  2, 25]),
+        '260': filter_for_range([2026, 5, 23,  2, 30], [2026, 5, 23,  2, 40]),
+        '270': filter_for_range([2026, 5, 23,  2, 45], [2026, 5, 23,  2, 55]),
+        '280': filter_for_range([2026, 5, 23,  3, 00], [2026, 5, 23,  3, 10]),
+        '290': filter_for_range([2026, 5, 23,  3, 15], [2026, 5, 23,  3, 25]),
+        '300': filter_for_range([2026, 5, 23,  3, 30], [2026, 5, 23,  3, 40])
+    })
+    return series, ws
 
 
 @app.cell
@@ -313,14 +344,32 @@ def _(ws):
 
 
 @app.cell
-def _(ws):
-    ws.ui.error_rates()
+def _(series):
+    series.api.error_rates()
     return
 
 
 @app.cell
-def _(ws):
-    ws.api.failures()
+def _(series):
+    series.api.response_times('p90')
+    return
+
+
+@app.cell
+def _(series):
+    series.api.response_times('p99')
+    return
+
+
+@app.cell
+def _(series):
+    series.ui.response_times('p90')
+    return
+
+
+@app.cell
+def _(series):
+    series.ui.error_rates()
     return
 
 
@@ -345,20 +394,13 @@ def _(ws):
 
 @app.cell
 def _(ws):
-    toploterr = ws.query("""
-        select timeStamp
-             , label
-             , success
-             , elapsed
-          from src
-          where not success""")
-    toploterr
+    ws.api.timeline_response_times()
     return
 
 
 @app.cell
 def _(ws):
-    ws.timeline_response_times()
+    ws.api.timeline_error_rates()
     return
 
 

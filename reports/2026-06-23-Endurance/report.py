@@ -59,7 +59,7 @@ def _(GT, Path, datetime, mo, pd, timedelta):
             if isinstance(tab_header, dict): r = r.tab_header(**tab_header)
         r = r.cols_align('left')
         r = r.cols_align(align="right", columns=["size"])
-        r = r.fmt_number(columns="size")
+        r = r.fmt_number(columns="size", decimals=0)
         r = r.tab_options(table_body_vlines_style='solid')
         r = r.opt_vertical_padding(scale=0)
         return r
@@ -127,14 +127,14 @@ def _(GT, Path, datetime, mo, pd, timedelta):
         IS_API,
         IS_UI,
         files_table,
-        filter_for,
+        filter_for_range,
         list_errors_files,
         list_result_files,
         with_src_from_files,
     )
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(
     IS_API,
     IS_UI,
@@ -282,15 +282,38 @@ def _(
     return (WorkSet,)
 
 
-@app.cell
-def _(ws):
-    ws.api.percentiles()
+@app.cell(hide_code=True)
+def _(WorkSet, pd):
+    class WorkSeries:
+        def __init__(self, defs, create_workset=None):
+            self.defs = defs
+            if create_workset is None: create_workset = WorkSet
+            self.sets = { k: create_workset(scope) for (k, scope) in defs.items() }
+        @property
+        def api(self):
+            return WorkSeries(self.defs, lambda d: WorkSet(d).api)
+        @property
+        def ui(self):
+            return WorkSeries(self.defs, lambda d: WorkSet(d).ui)
+        def error_rates(self):
+            t = None
+            for (k, v) in self.sets.items():
+                tn = v.error_rates().rename(columns={'%err': f'@{k}'})[['label', f'@{k}']]
+                t = tn if t is None else pd.merge(t, tn, how='outer')
+            return t
+        def response_times(self, column='p95'):
+            t = None
+            for (k, v) in self.sets.items():
+                tn = v.response_times().rename(columns={column: f'@{k}'})[['label', f'@{k}']]
+                t = tn if t is None else pd.merge(t, tn, how='outer')
+            return t
+
     return
 
 
 @app.cell
-def _(WorkSet, filter_for):
-    ws = WorkSet(filter_for(2026, 5, 19, 21, 00))
+def _(WorkSet, filter_for_range):
+    ws = WorkSet(filter_for_range([2026, 5, 23, 5, 0], [2026, 5, 23, 20, 10]))
     return (ws,)
 
 
@@ -314,75 +337,49 @@ def _(ws):
 
 @app.cell
 def _(ws):
+    ws.api.timeline_response_times()
+    return
+
+
+@app.cell
+def _(ws):
+    ws.ui.response_times()
+    return
+
+
+@app.cell
+def _(ws):
+    ws.ui.timeline_response_times()
+    return
+
+
+@app.cell
+def _(ws):
+    ws.ui.timeline_error_response_times()
+    return
+
+
+@app.cell
+def _(ws):
     ws.ui.error_rates()
     return
 
 
 @app.cell
 def _(ws):
-    ws.api.failures()
+    ws.api.timeline_error_rates()
     return
 
 
 @app.cell
 def _(ws):
-    ws.ui.failures()
-    return
-
-
-@app.cell
-def _(ws):
-    toplot = ws.query("""
-        select date_trunc('second', timeStamp) as timeStamp
-             , label
-             , success
-             , max(elapsed) as elapsed
-          from src
-          group by all""")
-    toplot
-    return
-
-
-@app.cell
-def _(ws):
-    toploterr = ws.query("""
-        select timeStamp
-             , label
-             , success
-             , elapsed
-          from src
-          where not success""")
-    toploterr
-    return
-
-
-@app.cell
-def _(ws):
-    ws.timeline_response_times()
-    return
-
-
-@app.cell
-def _(ws):
-    ws.timeline_error_response_times()
+    ws.api.timeline_error_response_times()
     return
 
 
 @app.cell
 def _(ws):
     ws.api.timeline_tps()
-    return
-
-
-@app.cell
-def _(ws):
-    ws.ui.timeline_tps()
-    return
-
-
-@app.cell
-def _(ws):
-    ws.timeline_error_rates()
     return
 
 

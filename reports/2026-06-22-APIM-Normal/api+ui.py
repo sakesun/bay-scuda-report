@@ -284,67 +284,67 @@ def _(
 
 @app.cell
 def _(WorkSet, filter_for):
-    ws = WorkSet(filter_for(2026, 5, 19, 21, 00))
+    ws = WorkSet(filter_for(2026, 5, 22, 22, 30))
+    return (ws,)
+
+
+@app.cell
+def _(ws):
+    ws.show_sources()
     return
 
 
 @app.cell
-def _():
-    # ws.show_sources()
+def _(ws):
+    ws.api.percentiles()
     return
 
 
 @app.cell
-def _():
-    # ws.api.percentiles()
+def _(ws):
+    ws.api.response_times()
     return
 
 
 @app.cell
-def _():
-    # ws.api.response_times()
+def _(ws):
+    ws.api.error_rates()
     return
 
 
 @app.cell
-def _():
-    # ws.api.error_rates()
+def _(ws):
+    ws.ui.error_rates()
     return
 
 
 @app.cell
-def _():
-    # ws.ui.error_rates()
+def _(ws):
+    ws.api.failures()
     return
 
 
 @app.cell
-def _():
-    # ws.api.failures()
+def _(ws):
+    ws.ui.failures()
     return
 
 
 @app.cell
-def _():
-    # ws.ui.failures()
+def _(ws):
+    ws.api.timeline_response_times()
     return
 
 
 @app.cell
-def _():
-    # ws.timeline_response_times()
+def _(ws):
+    ws.ui.timeline_error_response_times()
     return
 
 
 @app.cell
-def _():
-    # ws.timeline_error_response_times()
-    return
-
-
-@app.cell
-def _():
-    # ws.api.timeline_tps()
+def _(ws):
+    ws.api.timeline_tps()
     return
 
 

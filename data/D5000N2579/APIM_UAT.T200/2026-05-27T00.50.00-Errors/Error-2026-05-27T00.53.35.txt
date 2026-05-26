@@ -1,0 +1,72 @@
+Error at: https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/consent?OCIS_REQ=W33Gfd8Tnns9ubkXUQZSa6J%2BxSbud85PNvfktFnxRjd7S1LYl4NL6KVpD8rFZs7GzCfBAl7gpiNDxM6LyTG%2BI5%2BhPGI0cThG6Fvxinxeyp6NCGcqga7fC%2F2hZDoINegjJh5upMXu9tPxuL5v0O3BtNmzbn0yWjKeAH0R5l%2Fvu4T9tngOle5RstB4vPzlXIpMQP1uUq7VeWUuEfp3hW%2Bmkp68pKDeIrmaW2Xdesc0uV2LT%2FUBzTN%2F31zAbGylHcRT6x88e7D4%2BtnDk1IkzoLtkHx1ZUO8GGAd6gn%2F7ZykNOUgCELXMFMT0EgGA4sHNtloCc%2FdIdJRhKlYFFTqoiL5706oX2z1y9Lq0W3MQugM7aPExPB4VqFTCXYSICmv1PwQtvVDxoB7mtqhW8rApbNxfR0vSbBSP4tCcL0uFzwFsqCqNZXTv0DcaaHUHnUwD%2BbiQgKJtVrFECUJLM7wiQI6Ll1q9CFCY09%2BKlF4iOEFAmBeh%2B5y85NJv3Nud75eyMcrgPEso21eZ7MRC%2BRRzJ6viRkFN0kB%2BAZYX2Onjm00yAkxczZ%2BwnvjmdOrxkEu%2FnMGsgvdJ9Y%2Fy%2BRfm8EmmFVL3PU8qm2YOSnzxj8E5nUBhBmX8rnmln6ESsQWpT39ZQD1DfhfWMhQHkIVmdMQYxqGSZQNdyTvXFtrU3pe1GMXGfkEIxE1JuUTrlEVTbG2%2BBYp4s61vzcRvUKnBwu1akYqs05V2UBZ0Y0RuIwExkW2%2BomkhjM5KH9V4g620Ww670JAKcJV0RY%2F235PEfLd831t3rDW0MhcMOvIAGbU5exIIN4fcMeXU5laCM%2F7kw36oirFgOD%2FVfaCNNi48DdD8DpYKlwcXJGuYDFke3GMCmZumFrODG8758RooN3DbetwW%2FiWUwHwjVmkilJrFAuusP5mYrrOg%2FanYWfordTrxC3sbxcmWtfvDPj6XiOjkks7lkNlCeYtb1%2BRD5XeBrHbPzwH6%2Bonpz9K4R8whYu%2BOQYI11Skiw4REsM4LeC6c230txD2%2BM3WRseW30Z9m%2FvjSce2Tku8nuNGAyN8FefScOMmWF3TvlGUPigwyr2QvbfKipBhemh8v6FBL5%2BetApczPRV1fNxiE1tyon13yGe%2FmBNm0RzNvZLUO1Cxw34lawerAX4u4HYvFeUJ8%2FF084C9nzUGUpfFE7v24nRCwCBiXSiCWaWyKQ4ypjMzdxh8jHM0RES4XIWVO2gJGrQPIq9s9PW%2Bp0BhaSs99m9xgeDzT%2Bzt93LhSsDbewFCJYAEdSq0nuZMc7z5Bcd8TIOsfxedve1UylNnouv2jLWo9J3ylq%2BKN%2FLX%2BMLHnynxF0MS6FjqStIuzcWeK22Zl6tKOz%2BzgqXei5Dlr8ZxXYhJ4mrLXiIXPcn1qogXVhkqc4zityclXsIvDdv6rgv19qv9H5tEPxPWgXLmGh4SPceTqs%2FLLoDzvTbzeaLYvmMLd1u3wFBhoF%2FB%2FB7YZNaXlAqpsuthBRtG4fEATyvZx7aORkVa9YySWLSEpbz10zhae6MuLyogn%2BCS4iC6LcEgr9YQmQu2XkBKhE6G%2FU5AopU4JWfAECvP3EVwvXZ1aULuBjXizIy%2BX2MHECDzv8Ir%2FelXa4QdkFxBu79Jx4zI0mn8y8Mhl9w0TWYTmgjP7nqCJGvMrZED%2BT%2Ba8t97rzNLjO2H3%2FSSu0IVEOBdTVCOAv2uWjsd%2BLZ7mI%2Fb%2Brxqv2QbaxE%2BIjLHzMU%2F1eaY0BW5sRn9cEQHTlfdSZPxeP%2BZQM83pz%2B5rRMZImjyHrILTgykXoVUlm7Ja6XTjilfqSa31qfwrPxDSu1oT51HVH9bz2iGQa3Sb9qCKWe2lQMvg0SahEYO0wnHQf1a5YWcuLTxtYX%2FtArrgnxRizgPLPssNGoLHvEFipk2OUqcHUWiiVRRSDdrL7nLY92XOMhL68MTgHvyTSBzC8bvoXHVLO9km8b%2BMkdDCbsPtX1HJCulD8CCqnsczP0dxNXtuieKd9r%2Fre9BH5dN3oD8jUXNKleljFMrpAy71gFFPYRRGCTpOa2nxckOSpU85g8NenJHVsTZ6RfGZokaWriiFwGrRX%2FY1qdRTz9rpU3TWvXo5AGGNfWsJrIdebW6h5kSS2J%2FuGOsRCi1feFQnm4vuyL2CCMX4nOfGLo8fPiSRyAMBfgia%2FpIOzzQMDv52xRa7rWeGvvSftVXQRhVU6fVJ91CiFcGCOI4xVaC4T8LQBG7kWgAZUuEGMT4LQ6gouaV3bfIYFAMdAN6MySHMbCI4T7ZQ2vfM0vdAltgdb5bm0XoXzXn8zZHz8TxCShkWX94n8wVBky07T4YcUsYLhXBYAFsj0JJrmhxAMt0eg%2BkV8BU16xIP1%2FOvj5Ie8YrD3H5e7dt1fQu5Ci0j%2Flj63g8KwwPTKa6%2FDjfPOpf0YlEB34zq%2Fd3BPOJ%2FUxerOjJPSCvSo770cAV2B4b4vZx3%2BAAzVWB0L9xfpAMJfUOULHL3RZVJBdAlip4VGsPmn%2F%2FrFwfOA6dlOt7NhJgHAU5RbEZL6e8ufb1TzsR8uTObQlNFalpXyURHeG5iZbVr3zezsM1bEjjsNFKcACNjE%2FXJxfZkX%2FtSdzhVgtAlKHCIrMlYK69lQxVsZ10xHuPsUM805aKZw48tTKjLnBff1PCzA9MBWofwNrR2dUyFqBkx%2FC6wFnqayEoi3Qw%2FNvl2Z%2F%2FLMbBY7d%2Fpgz%2Be9bT7nnFcv1KwHP7krG9WnhQKo1Ljzk4Yh9C2kzOwUABRzI6xaR0Wq0BxyucBrzrjXgCTo%2BR4IbsMoi0c9VXRlQzwNMqNIIOzmeZJ3AiYbpeLJzVQM%2B5MaR%2Bkzr%2FUYrPhEUflLKEouoz1dyzb6Hn5rl37Yyac%2FRauYDrm42m4t%2FKDsYGBTjHgZlq%2B7bqoNgXFVafw7zb4ZzWC%2Fe0220sSPhqE8tDmUjXvIM9de%2FUgkOCPRjpKpa4F4pA1cN%2BBqvB9dbMriAfzij9LAh8BclKmqykp1cx4C7C%2FsznOjr2JtV5QMqCycXRqYHlj2fpwHL7r0RI9HIYSoMNLSgON%2FfagZwMr9uwucFJ7YbTrqLxOvWXaTQZycTXppD1UfmKKS0TrCn3P7FhW6B7HdUntL3VqprMmjzevm1EG8z6secWRVvOCN3rQpKk90nxKEWVqecxuvSxRX555O4g9NzJlWJWdpmWzIhBYW66b3uKHb6lJbs3WiYpgbKtzSne2M%2BPJJmIP0CgeEak2nZkAB4yzRjBeEfyZyJDBdlp4QyhqASMbj2Dztjdl5SKQXy8LMr2RifQkjgtYssiPc30V09sAQ9ssmpONvf46LZD%2FKgdkFvWs1TltS2hJPTN%2F8FCfk2mlM91Ow2JZFXgxKuFU%2BqTyK%2Fh%2BTVoKyI6eacsErmztqxS3KIno%2Fd3cU5he2DzY4DKLAgCffaJ0%2BtUAjdeX37oS1x%2BlXOThRXdPNGPSnNGDkdu3c5yN%2F5YqOphdxvnN%2FfsuvKbbK8WOxqONPlr1MR0bodgL31EexCyWVN9uvPmq6Hi%2FPzCov2ITBhp%2FEAsP7eE6rdZ2oZG8stRGznf3%2B4PSPTNoXLLmB7EJZIu9Yt2uMPwjp%2Bwy9hP12jMb5%2FXvLW5voYfijcqyDMgD%2FPtiPP9hDtVCBpjjZMxeSzAX4XelF%2F33IJUYY3YCaOcIn%2B5ecLfLP9XukLxv2UoXSQpxjhvebkNteW4KP4luNIZtAHLIDWCXKXtituwr7zC7VFZbUqYpFMpmPgDC3bWEUklHYtXTk2CHTSNm%2B0PEYz3v8iGqbP91nV6Nse%2FoOHXTD9vPVV%2FBgDhITYB970zRdZ9L2tRFVGvIkHNSjJCP46cgDebGJDxaR0BIwNLUmhYrg7vozhiVZiC01tSdUOZGbNwIfoFjRz03u7U4VkX1KssaaFQFT3%2FRvdWjDzeuKTN8iamVfgT38ruEXf4kVhi1gT%2BqtILbSAHuqMROBNlnF%2BRxZyqcZFJKc8XFzu%2Bb61doE8frqQeAjckwJSKn%2F1nF8sGY%2FuYByXt9uRpFL16Til%2BKXgP%2FPvbkNbfvALLP%2Bo5iy6tc96KfPp%2Bu1SXqp%2BRS7yvgBOAFm%2B%2FlfV25ndR%2BYWG2LyWxdnVx7pXw7nWB7hjujqblN9qTEIwhmKi5SYxpkRuf3qNpnQsuMk5wBuMvcZisdjo9SBsg7dnlF%2BBobzgANO%7Exq%2FjdxiXM7Uw5fzGHGcTRAj9vyywBliTU7wvyqDIWIE
+
+com.microsoft.playwright.TimeoutError
+
+Error {
+  message='Timeout 180000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 180000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-11725878054641634337\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-11725878054641634337\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-11725878054641634337\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/sp/sso" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/sp/sso"
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/sso/v1/user/callback/login?nonce=cfdc73a9-b7c4-48e0-b10e-ecddd92b38bd" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/consent?OCIS_REQ=W33Gfd8Tnns9ubkXUQZSa6J%2BxSbud85PNvfktFnxRjd7S1LYl4NL6KVpD8rFZs7GzCfBAl7gpiNDxM6LyTG%2BI5%2BhPGI0cTh…"
+
+
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 180000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 180000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-11725878054641634337\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-11725878054641634337\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-11725878054641634337\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/sp/sso" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/sp/sso"
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/sso/v1/user/callback/login?nonce=cfdc73a9-b7c4-48e0-b10e-ecddd92b38bd" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/consent?OCIS_REQ=W33Gfd8Tnns9ubkXUQZSa6J%2BxSbud85PNvfktFnxRjd7S1LYl4NL6KVpD8rFZs7GzCfBAl7gpiNDxM6LyTG%2BI5%2BhPGI0cTh…"
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:985)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:625)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitFor(EnterpriseCustomerMaster.java:89)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitToStart(EnterpriseCustomerMaster.java:99)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitToStartAfterSignIn(EnterpriseCustomerMaster.java:108)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.lambda$getReady$0(EnterpriseCustomerMaster.java:61)
+	at scuda.perf.uitest.screens.Screen.measure(Screen.java:92)
+	at scuda.perf.uitest.screens.Screen.measure(Screen.java:85)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.getReady(EnterpriseCustomerMaster.java:59)
+	at scuda.perf.uitest.App.threadRun(App.java:228)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 180000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 180000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-11725878054641634337\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-11725878054641634337\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-11725878054641634337\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/sp/sso" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/sp/sso"
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/sso/v1/user/callback/login?nonce=cfdc73a9-b7c4-48e0-b10e-ecddd92b38bd" navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/consent?OCIS_REQ=W33Gfd8Tnns9ubkXUQZSa6J%2BxSbud85PNvfktFnxRjd7S1LYl4NL6KVpD8rFZs7GzCfBAl7gpiNDxM6LyTG%2BI5%2BhPGI0cTh…"
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 16 more

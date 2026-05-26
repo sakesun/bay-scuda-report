@@ -1,0 +1,129 @@
+Error at: https://adfsuat.krungsri.com/adfs/ls/?client-request-id=35485ffc-53f8-4470-8261-a6fa2438e028&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=LoginOptions%3D3%26estsredirect%3d2%26estsrequest%3drQQIARAArc29bxJRAADwd-WjlbRKiYODiQ4dHDyOe_fBcUkTEWyhpZQWitZB8u59wAn30XsHQkcH003nDg5qOjgY4-pCdOvUOKoDMTHRLnYkjYPRv8H1t_wSwKx2wtDnpiTZBHMRYZpDVpYhHeVUSBlSIGVMhwRnVZohWtom1A3tcJT2AoR7FPe8PkljzzFVVZEYJUEqkfzdKmnTul98jI7Ol4zJjddC4_8kfwNpIEvclzj3PgjXbCKWcDBc7-srDV9R98X9TTnPsrsNw6J3H4kngvBDED7PxOrI6cHzGb0fuKaHuM1NFzmUmyE26_mNiimn5X9iE5F5gYNCkzrI7uUJCSjnh5Go09i-9y6ypOKMoWoqFTFkGVGFMCtaGtVEgiAymKJDbMBvkauc41ZIedjKarcs5Ha7Qd9t88BOuzQ8ic6fRuczEXNuLpEEV8B1MI0KL2KpRHIt9_XLx4dPK09eHl0ejx6A45h0J-RNYzgablXddVTq-WVrb60mtYsFrbKaVzrNrtbcaw6qO7Xd7rJhys_iC8dxcBYXDmbB4SwYXxDGC2B68fn7V98__Xzzq3R66WahAqFcVhgu4g6zVrxaszDYCW8rlsLbuXJ9Uy_42379_lZjdWP5bRJMkmCyCKaL4CAF_gA1&cbcxt=&username=ssc_test_75%40bankkrungsri.net&mkt=&lc=
+
+com.microsoft.playwright.TimeoutError
+
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-14953653217878208080\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-14953653217878208080\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-14953653217878208080\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("input[type='submit'][data-report-event='Signin_Submit']")
+-     - locator resolved to <input disabled value="Next" type="submit" id="idSIButton9" data-report-value="Submit" data-report-trigger="click" data-report-event="Signin_Submit" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-bind="↵                attr: primaryButtonAttributes,↵                css: { 'high-contrast-overrides': true },↵                externalCss: {↵                    'button': true,↵                    'primary': true },↵                value: primaryButtonT…/>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not enabled
+-     - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not enabled
+-   - retrying click action
+-     - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+-     - locator resolved to <input value="Next" type="submit" id="idSIButton9" data-report-value="Submit" data-report-trigger="click" data-report-event="Signin_Submit" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-bind="↵                attr: primaryButtonAttributes,↵                css: { 'high-contrast-overrides': true },↵                externalCss: {↵                    'button': true,↵                    'primary': true },↵                value: primaryButtonText() || …/>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   - retrying click action
+-     - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+
+
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-14953653217878208080\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-14953653217878208080\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-14953653217878208080\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("input[type='submit'][data-report-event='Signin_Submit']")
+-     - locator resolved to <input disabled value="Next" type="submit" id="idSIButton9" data-report-value="Submit" data-report-trigger="click" data-report-event="Signin_Submit" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-bind="↵                attr: primaryButtonAttributes,↵                css: { 'high-contrast-overrides': true },↵                externalCss: {↵                    'button': true,↵                    'primary': true },↵                value: primaryButtonT…/>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not enabled
+-     - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not enabled
+-   - retrying click action
+-     - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+-     - locator resolved to <input value="Next" type="submit" id="idSIButton9" data-report-value="Submit" data-report-trigger="click" data-report-event="Signin_Submit" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-bind="↵                attr: primaryButtonAttributes,↵                css: { 'high-contrast-overrides': true },↵                externalCss: {↵                    'button': true,↵                    'primary': true },↵                value: primaryButtonText() || …/>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   - retrying click action
+-     - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2500)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.proceedSignInEntry(EnterpriseCustomerMaster.java:349)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.getReady(EnterpriseCustomerMaster.java:55)
+	at scuda.perf.uitest.App.threadRun(App.java:228)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-14953653217878208080\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-14953653217878208080\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-14953653217878208080\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("input[type='submit'][data-report-event='Signin_Submit']")
+-     - locator resolved to <input disabled value="Next" type="submit" id="idSIButton9" data-report-value="Submit" data-report-trigger="click" data-report-event="Signin_Submit" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-bind="↵                attr: primaryButtonAttributes,↵                css: { 'high-contrast-overrides': true },↵                externalCss: {↵                    'button': true,↵                    'primary': true },↵                value: primaryButtonT…/>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not enabled
+-     - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not enabled
+-   - retrying click action
+-     - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+-     - locator resolved to <input value="Next" type="submit" id="idSIButton9" data-report-value="Submit" data-report-trigger="click" data-report-event="Signin_Submit" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-bind="↵                attr: primaryButtonAttributes,↵                css: { 'high-contrast-overrides': true },↵                externalCss: {↵                    'button': true,↵                    'primary': true },↵                value: primaryButtonText() || …/>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not stable
+-     - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   - retrying click action
+-     - waiting 100ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 13 more

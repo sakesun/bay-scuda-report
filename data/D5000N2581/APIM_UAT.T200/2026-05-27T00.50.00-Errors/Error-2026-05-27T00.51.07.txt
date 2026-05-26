@@ -1,0 +1,63 @@
+Error at: https://login.microsoftonline.com/4c08454e-c2f0-4227-b5e5-da2a8f362c82/saml2?SAMLRequest=hVNdb9owFP0rkfvsxJh8gEWo2FBXpNKhwbqqb8Z2wJpj01xntP%2B%2BDixSN6n0xbKsc%2B4995zryfVLbaI%2FqgHtbIkGMUGRssJJbXcl%2Brm5wSMUgedWcuOsKtGrAnQ9nQCvzYHNWr%2B3P9Rzq8BHoZAF9pIRUqK2scxx0MAsrxUwL9h6trxjNCbs0LhKm%2FDIvW%2F0tvWKPQYS6guALtHe%2BwNLkuPxGB%2BHsWt2CSVkkDwu79Zir2qOte1ECdWzOj2X23IA1fgwZU%2BRoHcfdCIJGScB1UGuenyw5UNhJO3gAXH1XtDhUyO8E86gaPX39kXbs%2FGXaNszCNjtZrPCq%2B%2FrDYpuXCPUKY0SVdxA8GUeMtGW%2B1OunWwIuo3baRvXWjQOXOWdNdqqWLg6SQUZpVmqsKAVwSmlBd5mKsOSUz6qhjkVI5p0Q1EULQBatTgl4EtECc0xyTDNN4OCZYQNiycUPfQrRbuVWsxLpCWec8DfDsVDMbvPc7n79YSfBfyGane7xOi8VOxUvOkmqrm%2F7ET3EqpWJ2jIx2v%2Fiqb9rFoKwFyoMd8WFc%2F5OKWq4sNwVDmVokgVkVms5ZkXsuTCKGFcKztDWJoOk0rJSfJOVb%2F396HxYr5yRovXaGaMO35tFPfhe%2FimVehT8YN48L%2F4mmszk7JRACiZnrv%2B%2B8Gmbw%3D%3D&RelayState=SQsm&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=M%2BA6DASFK9nYtZp5w4%2BJ2g34gx2aD0KLCQ3cWJpDwHSfhcOUxz3Ra4%2BclG%2B5uyAxvOWBtEmmzh6%2F8sk6zQhNYg3DGIsxKhKKe00DM5GxwNMBj81mCx5M3NqcDsYJEpAasFq0E5SJOVy6iz%2FI1Toeh9gmQLYPtIz8y8wTLuY%2BEMP0%2FuXWat6rpCA30OM2ErVPjZrlmj%2FPMZt%2F%2B86kyggOXOYGzuRnCdfQb5rJGIZjARVMNCRrhHAV4OEZK1o%2BEsIml8Aa1vfQwhH6FiJuyZPQzGoqBw6lRadKMA6z6cE383lrrAYHEw4SfA9ljNqmcYgsKlxENPXsTaw87UxXkZ3IVA%3D%3D
+
+com.microsoft.playwright.TimeoutError
+
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-4139349764832969268\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-4139349764832969268\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-4139349764832969268\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("oj-button[title='idp-azure-adtest-nprd']")
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/user/request/login" navigation to finish...
+-     - navigated to "https://login.microsoftonline.com/4c08454e-c2f0-4227-b5e5-da2a8f362c82/saml2?SAMLRequest=hVNdb9owFP0rkfvsxJh8gEWo2FBXpNKhwbqqb8Z2wJpj01xntP%2B%2BDixSN6n0xbKsc%2B4995zryfVLbaI%2FqgHtbIkGMUGRssJJbXcl%2…"
+
+
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-4139349764832969268\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-4139349764832969268\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-4139349764832969268\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("oj-button[title='idp-azure-adtest-nprd']")
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/user/request/login" navigation to finish...
+-     - navigated to "https://login.microsoftonline.com/4c08454e-c2f0-4227-b5e5-da2a8f362c82/saml2?SAMLRequest=hVNdb9owFP0rkfvsxJh8gEWo2FBXpNKhwbqqb8Z2wJpj01xntP%2B%2BDixSN6n0xbKsc%2B4995zryfVLbaI%2FqgHtbIkGMUGRssJJbXcl%2…"
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2500)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.proceedOracleCloudAccountSignIn(EnterpriseCustomerMaster.java:324)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.getReady(EnterpriseCustomerMaster.java:53)
+	at scuda.perf.uitest.App.threadRun(App.java:228)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-4139349764832969268\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-4139349764832969268\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-4139349764832969268\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("oj-button[title='idp-azure-adtest-nprd']")
+-     - waiting for" https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/fed/v1/user/request/login" navigation to finish...
+-     - navigated to "https://login.microsoftonline.com/4c08454e-c2f0-4227-b5e5-da2a8f362c82/saml2?SAMLRequest=hVNdb9owFP0rkfvsxJh8gEWo2FBXpNKhwbqqb8Z2wJpj01xntP%2B%2BDixSN6n0xbKsc%2B4995zryfVLbaI%2FqgHtbIkGMUGRssJJbXcl%2…"
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 13 more

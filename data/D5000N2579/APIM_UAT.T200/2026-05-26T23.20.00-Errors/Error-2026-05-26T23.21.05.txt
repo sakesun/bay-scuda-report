@@ -1,0 +1,132 @@
+Error at: https://login.microsoftonline.com/4c08454e-c2f0-4227-b5e5-da2a8f362c82/saml2?SAMLRequest=hVPRbtowFP2VyH12YkwCxCJUbKwaWtlYYVW1N2PfgCXHprHTlL%2BfA4vUTSp9sSzrnHvPued6evta6egFaqesKdAgJigCI6xUZl%2BgX9s7PEGR89xIrq2BAp3AodvZ1PFKH9m88QfzAM8NOB%2BFQsax14yQAjW1YZY75ZjhFTjmBdvMV%2FeMxoQda1sqHR6597XaNR7YUyChvoBTBTp4f2RJ0rZt3A5jW%2B8TSsggeVrdb8QBKo6V6UQJ6FmdnuttuXNQ%2B%2BCypwSb7zYiaRJAAXHTo6VT%2B3fgJCF5B%2B8gN28FHT8chLfCahSt%2F94%2BKXMZ%2FDXa7gJy7Ot2u8brH5stiu5sLeCcRoFKrl2YyyJkogz351w73S4I13avTFwpUVtnS2%2BNVgZiYaskFWSSZilgQUuCU0rHeJdBhiWnfFIOR1RMaNKZoihaOtfA8pyALxAldIRJhuloOxgxShjNf6PosV8p2q3UclEgJfFzjvPB4cvzcfmNGv%2FyQAmsDo8%2FN6JNMbosFTsXrztHFffXJ9G9hKrlGRry9Mqf0Kz3qqRwmAvI%2BW5c8hHPUwolH4ajHFEpxikQmcVKXnghTC40CG0b2Q2EpekwKUFOkzeq%2Br3%2FHhovF2urlThFc61t%2B7kG7sP38HUD6EPxg3jwv%2FiKKz2XsgbnUDK7dP33g83%2BAA%3D%3D&RelayState=6U7G&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=PaIUYLlh26xppaHMYHpsUQgDfK0C1fx6GQOMPtlGihsGXZJ2FjJS6XtkrF941hzsCVzvTsPW7r4rAYAU4M72B6t7ZKA8p4zTHgzxlhGMvsfQb2GTJ4xxOCfRqcDNoL4IIxs1LTt0Dr%2BcMJhNziK2RSnX%2BkKzNNqYbR8AEezyeqX%2FWs9IHkz%2F4D8RP8LzI3Yu4M38aittMvKUxBx67%2BbK%2FkXMEs%2FL4GbDkDVISLXSq04HfBsana8EctELPcsroUPwrBQe0kz2k2IRCr7H6VLI4TLSiEiluiJi4ZWmNQp0OZPYXaopJecHXqNIuv2n46tzuu5npyz%2B%2Bw1ROl2Z8dBxUA%3D%3D
+
+com.microsoft.playwright.TimeoutError
+
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-6257093073295250265\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-6257093073295250265\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-6257093073295250265\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("input[type='submit'][data-report-event='Signin_Submit']")
+-     - locator resolved to <input value="Next" type="submit" id="idSIButton9" data-report-value="Submit" data-report-trigger="click" data-report-event="Signin_Submit" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-bind="↵                attr: primaryButtonAttributes,↵                css: { 'high-contrast-overrides': true },↵                externalCss: {↵                    'button': true,↵                    'primary': true },↵                value: primaryButtonText() || …/>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - <div class="lightbox-cover disable-lightbox" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox && showLightboxProgress() }"></div> intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - <div class="lightbox-cover disable-lightbox" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox && showLightboxProgress() }"></div> intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     53 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - <div class="lightbox-cover disable-lightbox" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox && showLightboxProgress() }"></div> intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+
+
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-6257093073295250265\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-6257093073295250265\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-6257093073295250265\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("input[type='submit'][data-report-event='Signin_Submit']")
+-     - locator resolved to <input value="Next" type="submit" id="idSIButton9" data-report-value="Submit" data-report-trigger="click" data-report-event="Signin_Submit" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-bind="↵                attr: primaryButtonAttributes,↵                css: { 'high-contrast-overrides': true },↵                externalCss: {↵                    'button': true,↵                    'primary': true },↵                value: primaryButtonText() || …/>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - <div class="lightbox-cover disable-lightbox" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox && showLightboxProgress() }"></div> intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - <div class="lightbox-cover disable-lightbox" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox && showLightboxProgress() }"></div> intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     53 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - <div class="lightbox-cover disable-lightbox" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox && showLightboxProgress() }"></div> intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2500)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.proceedSignInEntry(EnterpriseCustomerMaster.java:349)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.getReady(EnterpriseCustomerMaster.java:55)
+	at scuda.perf.uitest.App.threadRun(App.java:228)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-6257093073295250265\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-6257093073295250265\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-6257093073295250265\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("input[type='submit'][data-report-event='Signin_Submit']")
+-     - locator resolved to <input value="Next" type="submit" id="idSIButton9" data-report-value="Submit" data-report-trigger="click" data-report-event="Signin_Submit" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" data-bind="↵                attr: primaryButtonAttributes,↵                css: { 'high-contrast-overrides': true },↵                externalCss: {↵                    'button': true,↵                    'primary': true },↵                value: primaryButtonText() || …/>
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - <div class="lightbox-cover disable-lightbox" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox && showLightboxProgress() }"></div> intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - <div class="lightbox-cover disable-lightbox" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox && showLightboxProgress() }"></div> intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     53 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - <div class="lightbox-cover disable-lightbox" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox && showLightboxProgress() }"></div> intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 13 more

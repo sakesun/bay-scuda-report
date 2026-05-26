@@ -1,0 +1,13 @@
+{
+  "type" : "10.5.1",
+  "title" : "Unknown error occurred during processing. Please inspect the logs for more details.",
+  "detail" : "CloudInvocationException in: oracle.cloud.connector.impl.rest.translator.RESTTranslatorUtil.translateMessageFromXMLORABPEL-15236\n\nTranslation Failure.\nFailed to translate XML to JSON. javax.xml.stream.XMLStreamException: Cannot start document\nThe data does not conform to the NXSD schema. Please correct the problem.\n",
+  "o:errorCode" : "500",
+  "o:errorDetails" : [ {
+    "type" : "NA",
+    "instance" : "NA",
+    "title" : "NA",
+    "o:errorPath" : "NA",
+    "o:errorCode" : "NA"
+  } ]
+}

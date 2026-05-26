@@ -302,13 +302,19 @@ def _(ws):
 
 @app.cell
 def _(ws):
-    ws.api.response_times()
+    ws.api.response_times()[['label', 'min', 'avg', 'p95', 'cnt']]
     return
 
 
 @app.cell
 def _(ws):
-    ws.api.error_rates()
+    ws.ui.error_rates()
+    return
+
+
+@app.cell
+def _(ws):
+    ws.ui.response_times()[['label', 'min', 'avg', 'p95', 'cnt']]
     return
 
 

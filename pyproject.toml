@@ -18,3 +18,5 @@ dependencies = [
     "sqlglot>=30.6.0",
     "vega-datasets>=0.9.0",
 ]
+[tool.marimo.runtime]
+pythonpath = ["reports"]

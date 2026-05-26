@@ -5,7 +5,7 @@
 
 import marimo
 
-__generated_with = "0.23.4"
+__generated_with = "0.23.8"
 app = marimo.App(width="medium")
 
 
@@ -214,7 +214,6 @@ def _(full_sources, mo, t):
              , label
              , success
           from t
-
         """
     )
     return (toplot,)
@@ -244,7 +243,6 @@ def _(full_sources, mo, t):
              , label
              , success
           from t
-
         """
     )
     return
@@ -260,8 +258,6 @@ def _(api_sources, mo, s):
               (select round(quantile_cont(elapsed, 1 / 100)) from S) P01,
               (select round(quantile_cont(elapsed, 1 / 100)) from S) P99,
               (select count(*) from S)
-
-    
         """
     )
     return

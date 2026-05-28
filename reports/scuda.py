@@ -1,3 +1,4 @@
+from functools import cached_property
 import marimo as mo
 import pandas as pd
 import altair as alt
@@ -112,10 +113,12 @@ class WorkSet:
         self.result_files = list_result_files(scope)
         self.error_files = list_errors_files(scope)
         self.where = where
-    @property
+    @cached_property
     def api(self): return WorkSet(self.scope, IS_API)
-    @property
-    def ui(self): return WorkSet(self.scope, IS_UI)
+    @cached_property
+    def ui(self): return WorkSet(self.scope, f'({IS_UI}) and success')
+    @cached_property
+    def ui_with_errors(self): return WorkSet(self.scope, IS_UI)
     def show_sources(self):
         return mo.hstack([
             files_table(self.result_files, tab_header=dict(title='Result Files', subtitle=f'({len(self.result_files)} files)')),
@@ -244,10 +247,10 @@ class WorkSeries:
         self.defs = defs
         if create_workset is None: create_workset = WorkSet
         self.sets = { k: create_workset(scope) for (k, scope) in defs.items() }
-    @property
+    @cached_property
     def api(self):
         return WorkSeries(self.defs, lambda d: WorkSet(d).api)
-    @property
+    @cached_property
     def ui(self):
         return WorkSeries(self.defs, lambda d: WorkSet(d).ui)
     def error_rates(self):

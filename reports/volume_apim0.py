@@ -31,6 +31,18 @@ def _(ws):
 
 @app.cell
 def _(ws):
+    ws.api.query("select label, responseCode, avg(elapsed), count(*) from src where label = 'SearchJoint' group by all")
+    return
+
+
+@app.cell
+def _(ws):
+    ws.api.query("select * from src where label = 'SearchIndividual' order by elapsed desc")
+    return
+
+
+@app.cell
+def _(ws):
     ws.api.timeline_tps()
     return
 

@@ -31,6 +31,12 @@ def _(ws):
 
 @app.cell
 def _(ws):
+    ws.api.error_rates()
+    return
+
+
+@app.cell
+def _(ws):
     ws.api.query('select * from src where not success')
     return
 

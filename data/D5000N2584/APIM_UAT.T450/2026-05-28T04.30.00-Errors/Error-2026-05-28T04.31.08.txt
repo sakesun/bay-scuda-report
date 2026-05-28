@@ -1,0 +1,72 @@
+Error at: https://login.microsoftonline.com/4c08454e-c2f0-4227-b5e5-da2a8f362c82/saml2?SAMLRequest=hVNdb5swFP0ryHs2GAP5sEKqdFG1aO0WNdlU7c3xB%2FFkbIrNSP79TNJU3aSmLwjZ595z7rnHs5tDraM%2FonXKmhKkMQKRMMxyZaoS%2FNjewQmInKeGU22NKMFROHAznzla64YsOr83j%2BK5E85HoZFxZLgoQdcaYqlTjhhaC0c8I5vFwz3BMSLUOdH6QAdeSgJfCfbeNyRJ%2Br6P%2Byy2bZVghNIE5UkABcSnC5o7Vb0DRwmaDvAB8oo%2FFAhdF9S0ViodDqn3rdp1XpCnUPTawKl35T093G%2FYXtQUKjO4xAR440PzIa%2B3zGoQrV%2F%2BbpU5G3%2BtbHcGOfJlu13D9ffNFkR3tmXitI0SSKpdkLEMO1GG%2BtNeB%2Fku6Ne2UiauFWuts9Jbo5URMbN1kjM0yYtcQIYlgjnGY7grRAE5xXQisxFmE5wMQ2EQrZzrxOo0sC8BRngEUQHxeItTkiGSTX6B6OclUniI1GpZAsVhJQ%2B94unXZqNvK5vDR1w0z%2FJO%2FnYVBOdQkVPzdpiopv66E8NJ6CpP0BAjr%2FwRzC%2BzKs4cpExM6W4s6YhOcywkzcJHjjBn41wgXsSKn%2BvCTinTgmnb8cEQkudZIgWfJW9UXXL%2FLRCvlmurFTtGC61t%2F7kV1Ifn4dtOgA%2FFp3H6v%2FiaKr3gvBXOgWR%2BZv33gc3%2FAg%3D%3D&RelayState=hOLJ&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=NnTWCEaw97WynPwS7mf9nzmalw%2F3jpm1AeFkhp8ks7vZK8TK1AAx8tg%2BA24N3UOEILzDKEYdm7maF%2BNSqrTp4vhtJJUuMCcSPcPJdE868r%2FsAk58rihtL0dFHo9LgWH8heoXUvWcLiIvCV60PQXcoOyj%2FJrTa6vvEOXJ3wNlXS0vByJ%2Fs46qMe7h2ec8Wzf9exNjkKCKsDUlZ39mk%2B8DubAJPnqpHyi5TvPQcjxdy8NoIFc5pl2zcJBnuWho8Eya7TSW2GqWSQHKVrb4sQcvbEX2ov4HOqqvFe%2BpeKyHSOXxS5JsDBTOFnAwSmrmpKv6GmqdYUKhXzz497ats5I89Q%3D%3D
+
+com.microsoft.playwright.TimeoutError
+
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-13575337070437877101\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-13575337070437877101\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-13575337070437877101\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("oj-button[title='idp-azure-adtest-nprd']")
+-     - locator resolved to <oj-button :title="[[option.data.name]]" title="idp-azure-adtest-nprd" on-oj-action="[[companySubmit]]" id="idcs-signin-idp-signin-form-idp-button-idp-azure-adtest-nprd" :id="[['idcs-signin-idp-signin-form-idp-button-' + option.data.name]]" class="idcs-signin-common-signin-button oj-sm-12 oj-button oj-button-outlined-chrome oj-button-text-icon-start oj-enabled oj-complete oj-focus oj-default">…</oj-button>
+-   - attempting click action
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+
+
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-13575337070437877101\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-13575337070437877101\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-13575337070437877101\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("oj-button[title='idp-azure-adtest-nprd']")
+-     - locator resolved to <oj-button :title="[[option.data.name]]" title="idp-azure-adtest-nprd" on-oj-action="[[companySubmit]]" id="idcs-signin-idp-signin-form-idp-button-idp-azure-adtest-nprd" :id="[['idcs-signin-idp-signin-form-idp-button-' + option.data.name]]" class="idcs-signin-common-signin-button oj-sm-12 oj-button oj-button-outlined-chrome oj-button-text-icon-start oj-enabled oj-complete oj-focus oj-default">…</oj-button>
+-   - attempting click action
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2500)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.proceedOracleCloudAccountSignIn(EnterpriseCustomerMaster.java:324)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.getReady(EnterpriseCustomerMaster.java:53)
+	at scuda.perf.uitest.App.threadRun(App.java:228)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7I120092\AppData\Local\Temp\playwright-java-13575337070437877101\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7I120092\AppData\Local\Temp\playwright-java-13575337070437877101\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-13575337070437877101\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("oj-button[title='idp-azure-adtest-nprd']")
+-     - locator resolved to <oj-button :title="[[option.data.name]]" title="idp-azure-adtest-nprd" on-oj-action="[[companySubmit]]" id="idcs-signin-idp-signin-form-idp-button-idp-azure-adtest-nprd" :id="[['idcs-signin-idp-signin-form-idp-button-' + option.data.name]]" class="idcs-signin-common-signin-button oj-sm-12 oj-button oj-button-outlined-chrome oj-button-text-icon-start oj-enabled oj-complete oj-focus oj-default">…</oj-button>
+-   - attempting click action
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 13 more

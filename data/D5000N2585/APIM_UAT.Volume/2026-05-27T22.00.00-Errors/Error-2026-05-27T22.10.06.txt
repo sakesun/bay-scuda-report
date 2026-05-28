@@ -1,0 +1,13 @@
+Error at: https://login.microsoftonline.com/4c08454e-c2f0-4227-b5e5-da2a8f362c82/saml2?SAMLRequest=hVNdb9owFP0rkffsxJiED4tQ0bKqaO2KBuu6vRn7Bqw5NrWdAf9%2BDpSqm9T2JYrsc%2B8599zj0cW%2B1skfcF5ZU6JOSlACRlipzLpE35fXeIASH7iRXFsDJTqARxfjkee13rJJEzbmGzw14EMSGxnP2osSNc4wy73yzPAaPAuCLSZ3t4ymhHHvwYVIh55LIl%2BJNiFsWZbtdrt0102tW2eUkE5G8iyCIuLTGS29Wr8BJxkZtvAW8oLfF4S8L2jrbKV0POQhOLVqArDHWPTSwKs35T3e3S7EBmqOlWldEoBe%2BbD9kDdYYTVK5s9%2Fl8qcjH%2BvbHUCeXazXM7x%2FH6xRMm1dQKO2yhRxbWPMqZxJ8rwcNxrK99H%2FdqulUlrJZz1tgrWaGUgFbbOckEGeZEDFrQiOKe0j1cFFFhyygdVt0fFgGbtUBQlM%2B8bmB0HDiWihPYwKTDtLzsFI4R1818oeThHiraRmk1LpCT%2BfHiq7rH8sV%2FS%2BcbSL1c%2F5UO%2BvbwJv3OMTqFix%2Baunajm4X0n2pPYtTpCY4yCCgc0Ps%2BqpPCYCxjyVb%2FiPT7MKVS8Gz9Vj0rRz4HIIlXyVBd3yoUGoW0jW0NYnnezCuQoe6XqnPuvkXg2nVutxCGZaG13Vw54iM8juAbQh%2BI7aed%2F8TVXeiKlA%2B9RNj6x%2FvvAxn8B&RelayState=k7cm&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=MAaYrp0g8ee3fdvzFPxMBBDbt6YNe6M3sAEROaSjFsaxEJHoD9tdT1CDTpSGTed8850ZhfmPOLtZC9d6XnLMDKvyQwVEwR6YBcWyxgx0vvg9Fsb32R3N5aE35cB9yu10hj%2BTPI8Itu%2BsCuhYzyO4Au2Z318DCVX7axjZX%2BqKYrwEPMsEW5KHDb%2FWZKEJxGBUICfedgHr72bHY%2BocTCso6mMGPlcNSu3vViixWaOo4f4yWebueOr49rtVqYzeB3mbs54FXrxnSpYmK4y6D4zJNiwdZv8tNWRZON%2BY4ocww6BIxBh7aH6pUDTByh7tmrgMGNXA2JG3OAhm6tkyWNE5RQ%3D%3D
+
+java.lang.RuntimeException
+
+Fail to login after trying for more than 10 minutes
+
+java.lang.RuntimeException: Fail to login after trying for more than 10 minutes
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.getReady(EnterpriseCustomerMaster.java:47)
+	at scuda.perf.uitest.App.threadRun(App.java:228)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)

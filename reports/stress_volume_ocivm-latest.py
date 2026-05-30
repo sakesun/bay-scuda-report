@@ -18,22 +18,22 @@ def _():
 
 @app.cell
 def _(WorkSeries, WorkSet, filter_for_range):
-    ws = WorkSet(filter_for_range([2026, 5, 26, 22, 20], [2026, 5, 27, 1, 45]))
+    ws = WorkSet(filter_for_range([2026, 5, 28,  2, 00], [2026, 5, 28, 5, 15]))
     series = WorkSeries({
-        '250': filter_for_range([2026, 5, 26, 22, 20], [2026, 5, 26, 22, 30]),
-        '270': filter_for_range([2026, 5, 26, 22, 35], [2026, 5, 26, 22, 45]),
-        '290': filter_for_range([2026, 5, 26, 22, 50], [2026, 5, 26, 23, 00]),
-        '310': filter_for_range([2026, 5, 26, 23,  5], [2026, 5, 26, 23, 15]),
-        '330': filter_for_range([2026, 5, 26, 23, 20], [2026, 5, 26, 23, 30]),
-        '350': filter_for_range([2026, 5, 26, 23, 35], [2026, 5, 26, 23, 45]),
-        '370': filter_for_range([2026, 5, 26, 23, 50], [2026, 5, 27,  0, 00]),
-        '390': filter_for_range([2026, 5, 27,  0,  5], [2026, 5, 27,  0, 15]),
-        '410': filter_for_range([2026, 5, 27,  0, 20], [2026, 5, 27,  0, 30]),
-        '430': filter_for_range([2026, 5, 27,  0, 35], [2026, 5, 27,  0, 45]),
-        '450': filter_for_range([2026, 5, 27,  0, 50], [2026, 5, 27,  1, 00]),
-        '470': filter_for_range([2026, 5, 27,  1,  5], [2026, 5, 27,  1, 15]),
-        '490': filter_for_range([2026, 5, 27,  1, 20], [2026, 5, 27,  1, 30]),
-        '510': filter_for_range([2026, 5, 27,  0, 35], [2026, 5, 27,  1, 45])
+        '250': filter_for_range([2026, 5, 28,  2, 00], [2026, 5, 28,  2, 10]),
+        '270': filter_for_range([2026, 5, 28,  2, 15], [2026, 5, 28,  2, 25]),
+        '290': filter_for_range([2026, 5, 28,  2, 30], [2026, 5, 28,  2, 40]),
+        '310': filter_for_range([2026, 5, 28,  2, 45], [2026, 5, 28,  2, 55]),
+        '330': filter_for_range([2026, 5, 28,  3, 00], [2026, 5, 28,  3, 10]),
+        '350': filter_for_range([2026, 5, 28,  3, 15], [2026, 5, 28,  3, 25]),
+        '370': filter_for_range([2026, 5, 28,  3, 30], [2026, 5, 28,  3, 40]),
+        '390': filter_for_range([2026, 5, 28,  3, 45], [2026, 5, 28,  3, 55]),
+        '410': filter_for_range([2026, 5, 28,  4, 00], [2026, 5, 28,  4, 10]),
+        '430': filter_for_range([2026, 5, 28,  4, 15], [2026, 5, 28,  4, 25]),
+        '450': filter_for_range([2026, 5, 28,  4, 30], [2026, 5, 28,  4, 40]),
+        '470': filter_for_range([2026, 5, 28,  4, 45], [2026, 5, 28,  4, 55]),
+        '490': filter_for_range([2026, 5, 28,  5, 00], [2026, 5, 28,  5, 10]),
+        '510': filter_for_range([2026, 5, 28,  5, 15], [2026, 5, 28,  5, 25])
     })
     return series, ws
 
@@ -76,7 +76,7 @@ def _(series):
 
 @app.cell
 def _(series):
-    series.ui.response_times('p95')
+    series.ui.response_times('p90')
     return
 
 
@@ -97,6 +97,7 @@ def _(ws):
     toplot = ws.query("""
         select date_trunc('second', timeStamp) as timeStamp
              , label
+             , success
              , max(elapsed) as elapsed
           from src
           group by all""")

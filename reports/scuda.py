@@ -1,3 +1,4 @@
+from functools import cached_property
 import marimo as mo
 import pandas as pd
 import altair as alt
@@ -17,6 +18,8 @@ def get_data_dir():
 
 data_dir = get_data_dir()
 assert data_dir.exists()
+
+HIDDEN_LABELS = ['Get Token', 'SignIn', 'NewBrowser']
 
 def list_result_files(filter=lambda x: True):
     return [f.relative_to(data_dir)
@@ -112,10 +115,12 @@ class WorkSet:
         self.result_files = list_result_files(scope)
         self.error_files = list_errors_files(scope)
         self.where = where
-    @property
-    def api(self): return WorkSet(self.scope, IS_API)
-    @property
-    def ui(self): return WorkSet(self.scope, IS_UI)
+    def get_api(self, where): return WorkSet(self.scope, f"({IS_API}) and ({where})")
+    def get_ui(self, where): return WorkSet(self.scope, f"({IS_UI}) and ({where})")
+    @cached_property
+    def api(self): return self.get_api(f"label not in ({",".join(f"'{s}'" for s in HIDDEN_LABELS)})")
+    @cached_property
+    def ui(self): return self.get_ui(f"success and label not in ({",".join(f"'{s}'" for s in HIDDEN_LABELS)})")
     def show_sources(self):
         return mo.hstack([
             files_table(self.result_files, tab_header=dict(title='Result Files', subtitle=f'({len(self.result_files)} files)')),
@@ -224,14 +229,13 @@ class WorkSet:
             select '{label or '*'}' as label, P::numeric as P, elapsed from U where P <> '100'
         """)
         return data
-    def all_percentiles_sql(self, labels=[]):
+    def all_percentiles_sql(self, *, labels=[]):
         if not labels: labels = self.query("select distinct label from src order by 1")['label'].to_list()
-        if 'Get Token' in labels: labels.remove('Get Token')
         return ' union all '.join(
             f'({self.percentiles_sql(label)})'
             for label in labels)
     def percentiles(self, labels=[]):
-        data = mo.sql(self.all_percentiles_sql(labels))
+        data = mo.sql(self.all_percentiles_sql(labels=labels))
         chart = alt.Chart(data).mark_line().encode(
             x='P:T',
             y='elapsed:Q',
@@ -244,10 +248,10 @@ class WorkSeries:
         self.defs = defs
         if create_workset is None: create_workset = WorkSet
         self.sets = { k: create_workset(scope) for (k, scope) in defs.items() }
-    @property
+    @cached_property
     def api(self):
         return WorkSeries(self.defs, lambda d: WorkSet(d).api)
-    @property
+    @cached_property
     def ui(self):
         return WorkSeries(self.defs, lambda d: WorkSet(d).ui)
     def error_rates(self):

@@ -1,0 +1,76 @@
+Error at: https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/authorize?response_mode=form_post&response_type=id_token&scope=openid&IDCS_CG_ENC_VER=v2&state=juRfDc8CDQ7nyDbN2zj7QrQJcfp0DoMFcYZ91yxC8ms&nonce=5XX2tg6f2W0II1HezDa58Hyx6IH-vK4ZlY9Id4kz0NM&IDCS_IS_CLOUDGATE=true&X-HOST-IDENTIFIER-NAME=scuda.uat.oci.krungsri.tech&idcs_app_name=E39B841CE11C45CFAB6E951FE1305104_APPID&policyAppName=E39B841CE11C45CFAB6E951FE1305104_APPID&policyAppTenant=idcs-ace9ab7fa6a942efa32eff62dc74e0d5&idcs_app_resource_url=https%3A%2F%2Fscuda.uat.oci.krungsri.tech%3A443%2Fic%2Fbuilder%2Fprotected%3Fappid%3DSCUDA%26appver%3D1.0.35%26path%3DwebApps%252Fscuda%252F&client_id=E39B841CE11C45CFAB6E951FE1305104_APPID&IDCS_CG_ENC=true&enc=0p391G_YE8y9AgAAgwIAABAggwIAAGkCAAAQAOWz9YpacVin4H1b8dD-p6lt4XsD705CYR8L7uF2ND7V89-io_B4lpI71-7S3ou9iwaWssas7IQX9z4ecma3gMxY-PyzAJXFlcfyOaCVQnjyGaVn12MM36mWjKVUw9RszuPqgV6gGKDqFeEz-X0zgDSQ_J2KzgXO7lLKAGH6oZ7sEZjDdKfEfBKBoGW70KudprdOkvE9z5LQRyIYc8twNdw9fOmbeVW2B2utvaXICOtO7nMzm7Q-obhLU5p2VpkYchA_phlMp-LRCeNT8oT8GNVIRF301d4BlHzalhBvVo8lVkUr1bund79J-lOQdi58CbWxS973vEnV2m71dcjyJY7uDgAsAuNDJIGBYC31ii9tfEJr115MwZMNMMt6aSBZ91AD6Ak4t1hRmmjoxHCifNHJY4n65vAfy6HyHroUXY3JSxwKjun_FsOj2p_DYDCH7wcpy6esJGDwAvg01C4AWM6Nu0sNCDT-dhtlA7lphzCbFFZp4IpNhYG3zKeTgMcbsHDH5jS4m49xWY1Ot8ZHeQeMhPdAmkPb3RAd3t7H_TXzS0XoMHZfgwEiDKO1RKihoi1uU2br5XR0B6PhxuA4ZQSClUWxmyeEpqIs0rKkRQt_A_k3-It-2DzJc__wg2CZlGAV-JgcDImtibWoCG84aEojPsGD-5ZrffkY_D0eCcnR6rWI28IjZ18eQ40XTdR5BM1e9dsFsgcw1wUT9P5frMECQFFc2UHHvaYzFIpc-VxA40ZnqUH73MmUgG2vsZgv-X6HM7niYi_CI2O9Itp6Q365hZzNup9_MNQ0N_lDodR7sqFdLYUS4APnP8mdQc93j7_0FmZI39LDvbwBP20HXA3x5vzdQEh7tlDCNcTQr9mMuU6p9sqF0mY8vvJsC_Gih4qbtaKXX2xH_A
+
+com.microsoft.playwright.impl.TargetClosedError
+
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\dispatchers\dispatcher.js:109:30)
+    at Page.<anonymous> (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\dispatchers\pageDispatcher.js:71:12)
+    at Page.emit (node:events:519:28)
+    at Page._didClose (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\page.js:167:10)
+    at CRPage.didClose (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\chromium\crPage.js:131:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\chromium\crBrowser.js:176:14)
+    at CRSession.emit (node:events:519:28)
+    at C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\chromium\crConnection.js:138:14
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+-     - waiting for navigation to finish...
+
+
+com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\dispatchers\dispatcher.js:109:30)
+    at Page.<anonymous> (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\dispatchers\pageDispatcher.js:71:12)
+    at Page.emit (node:events:519:28)
+    at Page._didClose (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\page.js:167:10)
+    at CRPage.didClose (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\chromium\crPage.js:131:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\chromium\crBrowser.js:176:14)
+    at CRSession.emit (node:events:519:28)
+    at C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\chromium\crConnection.js:138:14
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+-     - waiting for navigation to finish...
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:985)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:625)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5418)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitFor(EnterpriseCustomerMaster.java:87)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitToStart(EnterpriseCustomerMaster.java:99)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitToStart(EnterpriseCustomerMaster.java:103)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:150)
+	at scuda.perf.uitest.App.threadRun(App.java:231)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\dispatchers\dispatcher.js:109:30)
+    at Page.<anonymous> (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\dispatchers\pageDispatcher.js:71:12)
+    at Page.emit (node:events:519:28)
+    at Page._didClose (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\page.js:167:10)
+    at CRPage.didClose (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\chromium\crPage.js:131:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\chromium\crBrowser.js:176:14)
+    at CRSession.emit (node:events:519:28)
+    at C:\Users\7i120092\AppData\Local\Temp\playwright-java-13946200160215825073\package\lib\server\chromium\crConnection.js:138:14
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+-     - waiting for navigation to finish...
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 14 more

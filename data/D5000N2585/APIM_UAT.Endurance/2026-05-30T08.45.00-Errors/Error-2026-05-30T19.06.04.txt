@@ -1,0 +1,58 @@
+Error at: https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/oauth2/v1/authorize?response_mode=form_post&response_type=id_token&scope=openid&IDCS_CG_ENC_VER=v2&state=hRp4fpyl-xfjIJL5TgX-czThCUa9zFxK-dDPd392sLA&nonce=tD1CTqg76tqncoN-2F5NiVMG1DzHAOBOngkws6JFEiU&IDCS_IS_CLOUDGATE=true&X-HOST-IDENTIFIER-NAME=scuda.uat.oci.krungsri.tech&idcs_app_name=E39B841CE11C45CFAB6E951FE1305104_APPID&policyAppName=E39B841CE11C45CFAB6E951FE1305104_APPID&policyAppTenant=idcs-ace9ab7fa6a942efa32eff62dc74e0d5&idcs_app_resource_url=https%3A%2F%2Fscuda.uat.oci.krungsri.tech%3A443%2Fic%2Fbuilder%2Fprotected%3Fappid%3DSCUDA%26appver%3D1.0.35%26path%3DwebApps%252Fscuda%252F&client_id=E39B841CE11C45CFAB6E951FE1305104_APPID&IDCS_CG_ENC=true&enc=WkbdYRhmI4q9AgAAgwIAABAggwIAAGkCAAAQAP0IG5tHY2kp7adwAF424s1izyYBON1bq9poTjSuws44GW35SZNjWiUCsahVn7bCDhndyIS0qQnq1RTf2jK8TchV61IUhUqw-2txpu7JUlNKxRcfDG9VnHe9ncEs7vCb7aA9bnyL_GatH8Wuv-gQC3REsx88-gKY1ZvFLMq8_sk_t5RmmN7bMSj3bzHh4zo7w2Zi7lcQQ7sgY2O9U9LSNzIfYKRxiBoT474A08Hve339VlDplhtVHlm6v7hdQQKTHbi4s7BwlBdZQ-2FWrflB5JpsyXieJEgrdyOEyXxtsBxgewkfr1Pkh6iHyJLhEgCx4jQSKAbJ8Och-OZcSjQPyWqAISlTiEllDhTUwlw9AQmJyGQPF6LuKqS_n4rAu41B1JuPtcukqeVyGjhMUKCi85jfbjpTiplAt_zTjjTqTVvG0RvNeFVSx5v2Zu8DiCzGOqpTQZH_18aADFbaG45c6CWJPBV_7TuVW-EQllGH97oym1pw45xAUt3yUq3uHeyxL9R_DpWf4IU5CK2erchKUptCtiKXuFBwarYRD5OixVNiD-fgeabku-U12rt5YspIcSnVwdoFCO21FGNDD7nj68TFuPatu-pPKQIQOItbczhI__okACM-CG6JfDAFKIyTLb5XwP_31IDaDMIeJzpDiADYAhFif6NTOpI6RNsJdrgr7iyhPIwMML-b-MG-maDwzEJigEufcNpsQL7pRaxnFnUSigRT37IAbj_DXFXGGuUB5aCpMet4lPSsfZuHcylgbzAM758nMkIVGpIODRimK6LxuK1s4PLnlNogAFKXyvn2TGY25v0JkJsWRfO1mJXAo05b0hd3k_va87p75Hmstt4Cn3HVSdDZ8k7axm2DeMP2xKYuckjPWJcw_fgKmYLNwuWcTPZlN7Gpg
+
+com.microsoft.playwright.TimeoutError
+
+Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-8017295029031574087\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-8017295029031574087\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-8017295029031574087\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+
+
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-8017295029031574087\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-8017295029031574087\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-8017295029031574087\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:985)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:625)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5418)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitFor(EnterpriseCustomerMaster.java:87)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitToStart(EnterpriseCustomerMaster.java:99)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitToStart(EnterpriseCustomerMaster.java:103)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:150)
+	at scuda.perf.uitest.App.threadRun(App.java:231)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\7i120092\AppData\Local\Temp\playwright-java-8017295029031574087\package\lib\server\progress.js:68:28)
+    at FrameDispatcher._runCommand (C:\Users\7i120092\AppData\Local\Temp\playwright-java-8017295029031574087\package\lib\server\dispatchers\dispatcher.js:95:31)
+    at DispatcherConnection.dispatch (C:\Users\7i120092\AppData\Local\Temp\playwright-java-8017295029031574087\package\lib\server\dispatchers\dispatcher.js:329:39)
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 14 more

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <soapenv:Fault>
+            <faultcode>soapenv:Server</faultcode>
+            <faultstring>Policy Falsified</faultstring>
+            <faultactor>https://sandbox.api.krungsri.net/bay/scuda/juristic/update</faultactor>
+            <detail>
+                <l7:policyResult status="Assertion Falsified"
+                    xmlns:l7="http://www.layer7tech.com/ws/policy/fault" xmlns:l7p="http://www.layer7tech.com/ws/policy">
+                    <l7:assertionResult
+                        assertion="l7p:ApiPortalIntegration" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:SetVariable" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:All" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Include" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="No Error">
+                        <l7:detailMessage id="7100">Comparison matched</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="No Error"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="Assertion Falsified">
+                        <l7:detailMessage id="7101">Comparison did not match: ${policy.authentication.APIKey.mode} is equal to ignore</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:Regex" status="No Error"/>
+                    <l7:assertionResult assertion="l7p:Encapsulated" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:All" status="Assertion Falsified"/>
+                    <l7:assertionResult
+                        assertion="l7p:ComparisonAssertion" status="Assertion Falsified">
+                        <l7:detailMessage id="7101">Comparison did not match: ${errorMsg} contains Account plan limit</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:All" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:Encapsulated" status="Assertion Falsified">
+                        <l7:detailMessage id="-6">No such variable: apiKeyRecord</l7:detailMessage>
+                        <l7:detailMessage id="-6">No such variable: serverTransactionID</l7:detailMessage>
+                    </l7:assertionResult>
+                    <l7:assertionResult assertion="l7p:All" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:All" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:All" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:OneOrMore" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:All" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:All" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:Include" status="Assertion Falsified"/>
+                    <l7:assertionResult assertion="l7p:All" status="Assertion Falsified"/>
+                </l7:policyResult>
+            </detail>
+        </soapenv:Fault>
+    </soapenv:Body>
+</soapenv:Envelope>

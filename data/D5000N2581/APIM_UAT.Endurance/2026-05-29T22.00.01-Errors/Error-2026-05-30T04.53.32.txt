@@ -1,0 +1,79 @@
+Error at: https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/ui/v1/signin
+
+com.microsoft.playwright.impl.TargetClosedError
+
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\dispatchers\dispatcher.js:109:30)
+    at Page.<anonymous> (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\dispatchers\pageDispatcher.js:71:12)
+    at Page.emit (node:events:519:28)
+    at Page._didClose (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\page.js:167:10)
+    at CRPage.didClose (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\chromium\crPage.js:131:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\chromium\crBrowser.js:176:14)
+    at CRSession.emit (node:events:519:28)
+    at C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\chromium\crConnection.js:138:14
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+-     - waiting for navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/ui/v1/signin"
+
+
+com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\dispatchers\dispatcher.js:109:30)
+    at Page.<anonymous> (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\dispatchers\pageDispatcher.js:71:12)
+    at Page.emit (node:events:519:28)
+    at Page._didClose (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\page.js:167:10)
+    at CRPage.didClose (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\chromium\crPage.js:131:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\chromium\crBrowser.js:176:14)
+    at CRSession.emit (node:events:519:28)
+    at C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\chromium\crConnection.js:138:14
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+-     - waiting for navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/ui/v1/signin"
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:985)
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:625)
+	at com.microsoft.playwright.Locator.waitFor(Locator.java:5418)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitFor(EnterpriseCustomerMaster.java:87)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitToStart(EnterpriseCustomerMaster.java:99)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.waitToStart(EnterpriseCustomerMaster.java:103)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:150)
+	at scuda.perf.uitest.App.threadRun(App.java:231)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at PageDispatcher._dispose (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\dispatchers\dispatcher.js:109:30)
+    at Page.<anonymous> (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\dispatchers\pageDispatcher.js:71:12)
+    at Page.emit (node:events:519:28)
+    at Page._didClose (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\page.js:167:10)
+    at CRPage.didClose (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\chromium\crPage.js:131:16)
+    at CRBrowser._onDetachedFromTarget (C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\chromium\crBrowser.js:176:14)
+    at CRSession.emit (node:events:519:28)
+    at C:\Users\7I120092\AppData\Local\Temp\playwright-java-11066486656493413662\package\lib\server\chromium\crConnection.js:138:14
+}
+Call log:
+-   - waiting for locator("[\\:title*='$properties.descriptionText'][title*='Standard Customer Data Application']") to be visible
+-     - waiting for navigation to finish...
+-     - navigated to "https://idcs-ace9ab7fa6a942efa32eff62dc74e0d5.identity.oraclecloud.com/ui/v1/signin"
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 14 more

@@ -1,0 +1,56 @@
+Error at: https://scuda.uat.oci.krungsri.tech/ic/builder/rt/SCUDA/live/webApps/scuda/vp/shell/main/main-individual-create?currentStep=4
+
+com.microsoft.playwright.impl.TargetClosedError
+
+Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-10511280838502208091\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\7I120092\AppData\Local\Temp\playwright-java-10511280838502208091\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\7I120092\AppData\Local\Temp\playwright-java-10511280838502208091\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+
+com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-10511280838502208091\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\7I120092\AppData\Local\Temp\playwright-java-10511280838502208091\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\7I120092\AppData\Local\Temp\playwright-java-10511280838502208091\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.queryCount(FrameImpl.java:1037)
+	at com.microsoft.playwright.impl.LocatorImpl.count(LocatorImpl.java:169)
+	at scuda.perf.uitest.screens.OracleJet.lambda$persist$1(OracleJet.java:236)
+	at scuda.perf.uitest.screens.OracleJet.persist(OracleJet.java:243)
+	at scuda.perf.uitest.screens.OracleJet.persist(OracleJet.java:255)
+	at scuda.perf.uitest.screens.createindividual.Step4_Additional._processToNextStep(Step4_Additional.java:31)
+	at scuda.perf.uitest.screens.createindividual.Step4_Additional._processToNextStep(Step4_Additional.java:9)
+	at scuda.perf.uitest.screens.ProcessStep.processToNextStep(ProcessStep.java:27)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.createIndividualProfile(EnterpriseCustomerMaster.java:187)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.runRandomly(EnterpriseCustomerMaster.java:171)
+	at scuda.perf.uitest.screens.EnterpriseCustomerMaster.repeating(EnterpriseCustomerMaster.java:139)
+	at scuda.perf.uitest.App.threadRun(App.java:231)
+	at scuda.perf.uitest.App.lambda$run$1(App.java:157)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:329)
+Caused by: com.microsoft.playwright.impl.TargetClosedError: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (C:\Users\7I120092\AppData\Local\Temp\playwright-java-10511280838502208091\package\lib\server\dispatchers\dispatcher.js:260:69)
+    at transport.onmessage (C:\Users\7I120092\AppData\Local\Temp\playwright-java-10511280838502208091\package\lib\cli\driver.js:53:59)
+    at Immediate._onImmediate (C:\Users\7I120092\AppData\Local\Temp\playwright-java-10511280838502208091\package\lib\server\utils\pipeTransport.js:76:16)
+    at process.processImmediate (node:internal/timers:485:21)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 18 more

@@ -13,7 +13,7 @@ def _():
 
 @app.cell
 def _(WorkSet, filter_for):
-    ws = WorkSet(filter_for(2026, 5, 15, 22, 00))
+    ws = WorkSet(filter_for(2026, 5, 15, 20, 20))
     return (ws,)
 
 
@@ -50,12 +50,6 @@ def _(ws):
 @app.cell
 def _(ws):
     ws.api.percentiles()
-    return
-
-
-@app.cell
-def _(ws):
-    ws.ui.response_times()
     return
 
 

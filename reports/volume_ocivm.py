@@ -30,6 +30,12 @@ def _(ws):
 
 @app.cell
 def _(ws):
+    ws.get_ui("label <> 'CreateIndividualProfile.Identification.Continue' or elapsed < 20000").query('select * from src')
+    return
+
+
+@app.cell
+def _(ws):
     ws.api.response_times()
     return
 
@@ -61,6 +67,12 @@ def _(ws):
 @app.cell
 def _(ws):
     ws.ui.response_times()
+    return
+
+
+@app.cell
+def _(ws):
+    ws.get_ui("elapsed > 5000 and label = 'CreateIndividualProfile.Identification.Continue'").query('select * from src')
     return
 
 

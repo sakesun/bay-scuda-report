@@ -59,29 +59,5 @@ def _(ws):
     return
 
 
-@app.cell
-def _(ws):
-    ws.ui.timeline_tps()
-    return
-
-
-@app.cell
-def _(ws):
-    ws.ui.timeline_response_times()
-    return
-
-
-@app.cell
-def _(ws):
-    ws.ui.error_rates()
-    return
-
-
-@app.cell
-def _(ws):
-    ws.ui.percentiles()
-    return
-
-
 if __name__ == "__main__":
     app.run()

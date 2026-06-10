@@ -37,14 +37,14 @@ def list_errors_files(filter=lambda x: True):
 def files_table(files, *, tab_header=None):
     filenames = [f for f in files]
     d = pd.DataFrame(files, columns=['File Name'])
-    d['size'] = d['File Name'].apply(lambda v: (data_dir / v).stat().st_size)
+    # d['size'] = d['File Name'].apply(lambda v: (data_dir / v).stat().st_size)
     r = GT(d)
     if tab_header:
         if isinstance(tab_header, str): r = r.tab_header(tab_header)
         if isinstance(tab_header, dict): r = r.tab_header(**tab_header)
     r = r.cols_align('left')
-    r = r.cols_align(align="right", columns=["size"])
-    r = r.fmt_number(columns="size", decimals=0)
+    # r = r.cols_align(align="right", columns=["size"])
+    # r = r.fmt_number(columns="size", decimals=0)
     r = r.tab_options(table_body_vlines_style='solid')
     r = r.opt_vertical_padding(scale=0)
     return r

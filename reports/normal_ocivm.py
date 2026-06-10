@@ -31,6 +31,12 @@ def _(ws):
 
 @app.cell
 def _(ws):
+    ws.api.error_rates()
+    return
+
+
+@app.cell
+def _(ws):
     ws.api.timeline_tps()
     return
 
@@ -62,12 +68,6 @@ def _(ws):
 @app.cell
 def _(ws):
     ws.ui.timeline_response_times()
-    return
-
-
-@app.cell
-def _(ws):
-    ws.ui.error_rates()
     return
 
 

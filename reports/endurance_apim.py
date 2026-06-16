@@ -6,6 +6,7 @@ app = marimo.App(width="medium")
 
 @app.cell
 def _():
+    import marimo as mo
     from scuda import filter_for, filter_for_range, merge_filters, WorkSet, WorkSeries
 
     return WorkSet, filter_for_range
@@ -25,13 +26,19 @@ def _(ws):
 
 @app.cell
 def _(ws):
-    ws.api.response_times()
+    ws.api.response_times()[['label', 'p90']]
     return
 
 
 @app.cell
 def _(ws):
     ws.api.error_rates()
+    return
+
+
+@app.cell
+def _(ws):
+    ws.api.timeline_error_rates()
     return
 
 
@@ -55,7 +62,7 @@ def _(ws):
 
 @app.cell
 def _(ws):
-    ws.ui.response_times()
+    ws.ui.response_times()[['label', 'p90']]
     return
 
 
@@ -86,21 +93,6 @@ def _(ws):
 @app.cell
 def _(ws):
     ws.get_ui("(label='CreateIndividualProfile.Completion') and success").timeline_response_times()
-    return
-
-
-@app.cell
-def _():
-    return
-
-
-@app.cell(hide_code=True)
-def _(mo):
-    _df = mo.sql(
-        f"""
-
-        """
-    )
     return
 
 

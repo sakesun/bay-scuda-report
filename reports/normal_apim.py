@@ -30,13 +30,13 @@ def _(ws):
 
 @app.cell
 def _(ws):
-    ws.api.response_times()
+    ws.api.response_times()[['label', 'p90']]
     return
 
 
 @app.cell
 def _(ws):
-    ws.api.error_rates()
+    ws.api.timeline_error_rates()
     return
 
 
@@ -66,7 +66,13 @@ def _(ws):
 
 @app.cell
 def _(ws):
-    ws.ui.response_times()
+    ws.ui.response_times()[['label', 'p90']]
+    return
+
+
+@app.cell
+def _(ws):
+    ws.ui.percentiles()
     return
 
 

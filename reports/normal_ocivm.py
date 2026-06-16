@@ -25,7 +25,7 @@ def _(ws):
 
 @app.cell
 def _(ws):
-    ws.api.response_times()
+    ws.api.response_times()[['label', 'p90']]
     return
 
 

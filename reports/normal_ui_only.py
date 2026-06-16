@@ -66,7 +66,7 @@ def _(ws):
 
 @app.cell
 def _(ws):
-    ws.ui.response_times()
+    ws.ui.response_times()[['label', 'p90']]
     return
 
 
@@ -91,6 +91,12 @@ def _(ws):
 @app.cell
 def _(ws):
     ws.ui.percentiles()
+    return
+
+
+@app.cell
+def _(ws):
+    ws.ui.timeline_response_times()
     return
 
 

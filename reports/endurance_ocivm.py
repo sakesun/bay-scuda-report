@@ -30,7 +30,7 @@ def _(ws):
 
 @app.cell
 def _(ws):
-    ws.api.response_times()
+    ws.api.response_times()[['label', 'p90']]
     return
 
 
@@ -48,7 +48,7 @@ def _(ws):
 
 @app.cell
 def _(ws):
-    ws.api.timeline_response_times()
+    ws.get_api('elapsed < 10000').timeline_response_times()
     return
 
 

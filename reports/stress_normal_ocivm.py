@@ -48,6 +48,12 @@ def _(ws):
 
 
 @app.cell
+def _(ws):
+    ws.api.percentiles()
+    return
+
+
+@app.cell
 def _(series):
     series.api.error_rates()
     return
@@ -62,6 +68,12 @@ def _(series):
 @app.cell
 def _(series):
     series.api.response_times('p90')
+    return
+
+
+@app.cell
+def _(series):
+    series.api.error_rates()
     return
 
 

@@ -308,6 +308,12 @@ def _(ws):
 
 @app.cell
 def _(ws):
+    ws.api.query('select label, responseCode, avg(elapsed), count(*) from src group by all order by 1, 2')
+    return
+
+
+@app.cell
+def _(ws):
     ws.api.error_rates()
     return
 

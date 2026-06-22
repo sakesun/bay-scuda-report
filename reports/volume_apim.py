@@ -19,7 +19,19 @@ def _(WorkSet, filter_for):
 
 @app.cell
 def _(ws):
+    ws.api.query('select label, responseCode, avg(elapsed) from src group by all order by 1, 2')
+    return
+
+
+@app.cell
+def _(ws):
     ws.show_sources()
+    return
+
+
+@app.cell
+def _(ws):
+    ws.api.query('select label, responseCode, avg(elapsed), count(*) from src group by all order by 1, 2')
     return
 
 

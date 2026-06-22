@@ -296,6 +296,12 @@ def _(ws):
 
 @app.cell
 def _(ws):
+    ws.api.query('select label, responseCode, avg(elapsed), round(quantile_cont(elapsed, 0.90)) as p90, count(*) from src group by all order by 1, 2')
+    return
+
+
+@app.cell
+def _(ws):
     ws.api.percentiles()
     return
 
